@@ -1,19 +1,35 @@
 {
   "name": "karasu",
   "version": "0.1.0",
-  "description": "Conjunto de librerias css y javascript para el desarrollo web pensado en wordpress y blogger.",
-  "main": "build.js",
+  "description": "Libreria css y js para el desarrollo de temas blogger y posiblemente wordpress.",
+  "main": "index.js",
   "scripts": {
     "develop": "gulp dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karasu-themes/karasu.git"
+  },
+  "keywords": [
+    "Blogger",
+    "javascript",
+    "css",
+    "scss"
+  ],
   "author": "Marcelo (Karasu)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Karasu-themes/karasu/issues"
+  },
+  "homepage": "https://github.com/Karasu-themes/karasu#readme",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
-    "@babel/register": "^7.12.1",
+    "@babel/register": "^7.12.1"
+  },
+  "dependencies": {
     "babelify": "^10.0.0",
-    "browserify": "^16.5.2",
+    "browserify": "^17.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
@@ -21,15 +37,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.14.1"
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "babel": {
-    "presets": [
-      "@babel/env"
-    ]
-  },
-  "dependencies": {
   }
 }
