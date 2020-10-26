@@ -1,0 +1,49 @@
+/*=> Padding */
+
+@for $i from 1 through $multiplo {
+	.p#{$i*4} {
+		padding: $i*4px;
+
+		&-t {
+			padding-top: $i*4px;
+		}
+		&-r {
+			padding-right: $i*4px;
+		}
+		&-b {
+			padding-bottom: $i*4px;
+		}
+		&-l {
+			padding-left: $i*4px;
+		}
+
+		// vertical
+		&-y {
+			padding-top: $i*4px;
+			padding-bottom: $i*4px;
+		}
+
+		// Horizontal
+		&-x {
+			padding-left: $i*4px;
+			padding-right: $i*4px;
+		}
+	}
+}
+
+// Valor cero
+.p0 {padding: 0;}
+.p0-t {padding-top: 0;}
+.p0-r {padding-right: 0;}
+.p0-b {padding-bottom: 0;}
+.p0-l {padding-left: 0;}
+
+
+.p0-x {
+	padding-left: 0;
+	padding-right: 0;
+}
+.p0-y {
+	padding-top: 0;
+	padding-bottom: 0;
+}

@@ -1,0 +1,12 @@
+.collapse-trigger {
+	cursor: pointer;
+	user-select: none;
+}
+
+.collapse-content {
+	display: none;
+}
+
+.collapse-content.is-active {
+	display: block;
+}

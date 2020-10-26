@@ -1,0 +1,67 @@
+.ani {
+
+	animation-duration: .2s;
+
+	// Fade
+	@include animation($fadeAnimation);
+
+	// Pulse
+	@include animationPulse($pulseAnimation);
+
+	&-lt {
+		transform-origin: left top;
+	}
+
+	&-mt {
+		transform-origin: center top;
+	}
+
+	&-rt {
+		transform-origin: right top;
+	}
+
+	&-lb {
+		transform-origin: left bottom;
+	}
+
+	&-mb {
+		transform-origin: center bottom;
+	}
+
+	&-rb {
+		transform-origin: right bottom;
+	}
+
+		
+	&-02s {animation-duration: .2s;}
+	&-05s {animation-duration: .5s;}
+	&-07s {animation-duration: .7s;}
+	&-1s {animation-duration: 1s;}
+	&-12s {animation-duration: 1.2s;}
+	&-15s {animation-duration: 1.5s;}
+	
+	&-slow {animation-duration: 2s;}
+	&-fast {animation-duration: .3s;}
+
+	&-infinite {
+		animation-iteration-count: infinite;
+	}
+
+	&-delay {
+		&-02s {animation-delay: .2s;}
+		&-05s {animation-delay: .5s;}
+		&-07s {animation-delay: .7s;}
+		&-1s {animation-delay: 1s;}
+		&-12s {animation-delay: 1.2s;}
+		&-15s {animation-delay: 1.5s;}
+	}
+
+	&-linear {animation-timing-function: linear;}
+	&-ease {animation-timing-function: ease;}
+	&-ease-in {animation-timing-function: ease-in;}
+	&-ease-out {animation-timing-function: ease-out;}
+	&-ease-in-out {animation-timing-function: ease-in-out;}
+	&-forwards {animation-fill-mode: forwards;}
+	&-backwards {animation-fill-mode: backwards;}
+	&-both {animation-fill-mode: both;}
+}

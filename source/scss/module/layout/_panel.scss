@@ -1,0 +1,50 @@
+.panel {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.panel-left,
+.panel-center,
+.panel-content {
+	height: 100%;
+}
+
+.panel-content {
+	overflow-y: auto;
+}
+
+.panel-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 90%;
+	max-width: $layoutPanel;
+	transform: translateX(-100%);
+	transition: transform .3s;
+	z-index: 1001;
+}
+
+.panel.is-active .panel-left {
+	transform: translateX(0);
+}
+
+.panel-center {
+	width: 100%;
+}
+
+
+@include query(lg) {
+
+	.panel-left {
+		position: relative;
+		transform: translateX(0);
+		transition: 0s;
+	}
+
+	.panel-center {
+		width: calc(100% - #{$layoutPanel});
+	}	
+}

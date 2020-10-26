@@ -1,0 +1,31 @@
+/*=> Inline*/
+.d-inline {
+	display: inline;
+	@include breakpoinStyle {display: inline;}
+}
+
+/*=> Block*/
+
+.d-block {
+	display: block;
+	@include breakpoinStyle {display: block;}
+}
+
+/*=> Inline block*/
+
+.d-iblock {
+	display: inline-block;
+	@include breakpoinStyle {display: inline-block;}
+}
+
+/*=> Flex*/
+
+.d-flex {
+	display: flex;
+	@include breakpoinStyle {display: flex;}
+}
+
+.d-iflex {
+	display: inline-flex;
+	@include breakpoinStyle {display: inline-flex;}
+}

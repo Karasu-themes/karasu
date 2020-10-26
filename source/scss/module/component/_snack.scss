@@ -1,0 +1,78 @@
+.snack {
+	background: $light;
+	color: rgba($text, .8);
+	padding: 16px;
+	padding-right: 48px;
+	font-weight: 400;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	position: relative;
+}
+
+// color
+
+.snack.is-opposite {
+	background: $text;
+	color: #fff;
+}
+
+.snack.is-red {
+	background: $error;
+	color: #fff;
+}
+
+.snack.is-blue {
+	background: $caution;
+	color: #fff;
+}
+
+.snack.is-yellow {
+	background: $warning;
+	color: #fff;
+}
+
+.snack.is-green {
+	background: $success;
+	color: #fff;
+}
+
+// Close
+
+.snack-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 16px;
+	cursor: pointer;
+}
+
+// Container
+
+.snack-container {
+	position: fixed;
+	padding: 16px;
+	max-height: 100%;
+	overflow-y: auto;
+}
+
+// Position container
+
+.snack-container.is-lb {
+	left: 0;
+	bottom: 0;
+}
+
+.snack-container.is-rb {
+	right: 0;
+	bottom: 0;
+}
+
+.snack-container.is-lt {
+	left: 0;
+	top: 0;
+}
+
+.snack-container.is-rt {
+	right: 0;
+	top: 0;
+}

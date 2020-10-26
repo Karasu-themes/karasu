@@ -1,0 +1,114 @@
+.btn {
+	background: $light;
+	color: $text;
+	padding: 12px 16px;
+	margin-bottom: 4px;
+	outline: 0;
+	border: 0;
+	font-weight: 500;
+	border-radius: 4px;
+	font-size: $size-btn;
+	display: inline-block;
+	transition: all .3s;
+}
+
+.btn-header {
+	text-align: left;
+	font-size: $size-sub;
+	color: rgba($text, .5);
+	display: inline-block;
+	vertical-align: middle;
+
+	span {
+		color: $text;
+		font-size: $size-base;
+		display: block;
+		margin-bottom: 4px;
+	}
+}
+
+button.btn,
+a.btn {
+	cursor: pointer;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+// Tamaños
+
+.btn.is-small {
+	padding: 8px 16px;
+	font-size: $size-sub;
+}
+
+// Iconos
+
+.btn.is-icon .fas,
+.btn.is-icon .fa,
+.btn.is-icon .far,
+.btn.is-icon .fab {
+	width: 24px;
+	line-height: 24px;
+	text-align: center;
+	margin-right: 4px;
+}
+
+// Color
+
+@include color("btn");
+
+
+// cta
+
+
+.btn.is-color.is-cta .btn-header {
+	color: rgba(#fff, .5);
+}
+
+.btn.is-color.is-cta .btn-header span {
+	color: #fff;
+}
+
+.btn.is-cta .fas,
+.btn.is-cta .fa,
+.btn.is-cta .far,
+.btn.is-cta .fab {
+	margin-right: 8px;
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+// offset
+
+.btn.is-offset-right {
+	margin-right: 8px;
+}
+
+
+
+.btn.is-offset-left {
+	margin-left: 8px;
+}
+
+// icon for dropdown
+
+.btn .is-dropdown {
+	margin-left: 8px;
+}
+
+// badge
+
+.btn.is-badge {
+	font-weight: 500;
+	padding: 4px;
+	font-size: $size-sub;
+}
+
+.btn.is-badge .fas,
+.btn.is-badge .far,
+.btn.is-badge .fab,
+.btn.is-badge .fa {
+	font-size: $size-sub;
+}

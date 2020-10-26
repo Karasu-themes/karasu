@@ -1,0 +1,101 @@
+// Colors
+
+$body: #fff !default;
+$color: #6a74ec !default;
+$caution: #6a92ec !default;
+$success: #8fa975 !default;
+$error: #be6161 !default;
+$warning: #b5a15c !default;
+$text: #313131 !default;
+$light: #f7f7f7 !default;
+
+$colors: (
+	"color": $color,
+	"blue": $caution,
+	"green": $success,
+	"red": $error,
+	"yellow": $warning,
+	"opposite": $text,
+) !default;
+
+$multiplo: 12;
+
+// Encabezado para las etiquetas h1-h6
+$size-h1: 32px !default;
+$size-h2: 28px !default;
+$size-h3: 20px !default;
+$size-h4: 18px !default;
+$size-h5: 14px !default;
+$size-h6: 12px !default;
+
+// Tamanos base para textos y botones.
+$size-base: 16px !default;
+$size-btn: 14px !default;
+$size-sub: 12px !default;
+
+// Fonts family
+$fontFamily: "Roboto" !default;
+$fontLogo: "Roboto" !default;
+
+// Layout
+$layoutWidth: 1200px !default;
+$layoutSidebar: 320px !default;
+$layoutPanel: 280px !default;
+
+
+// Responsive design
+$grid-columns: 12 !default;
+$width-columns: 20 !default;
+
+$breakpoint: (
+	"xs": 480px,
+	"sm": 576px,
+	"md": 768px,
+	"lg": 992px,
+	"xlg": 1200px) !default;
+
+// Animaciones "fadeIn-out"
+$fadeAnimation: (
+	// fadeIn
+	"fadeIn": "fadeIn",
+	"fadeInTop": "fadeInTop",
+	"fadeInLeft": "fadeInLeft",
+	"fadeInBottom": "fadeInBottom",
+	"fadeInRight": "fadeInRight",
+	"fadeInRotate": "fadeInRotate",
+	"fadeInRotateX": "fadeInRotateX",
+	"fadeInRotateY": "fadeInRotateY",
+	"fadeInScale": "fadeInScale",
+	"fadeInScaleX": "fadeInScaleX",
+	"fadeInScaleY": "fadeInScaleY",
+	// fadeOut
+	"fadeOut": "fadeOut",
+	"fadeOutTop": "fadeOutTop",
+	"fadeOutLeft": "fadeOutLeft",
+	"fadeOutBottom": "fadeOutBottom",
+	"fadeOutRight": "fadeOutRight",
+	"fadeOutRotate": "fadeOutRotate",
+	"fadeOutRotateX": "fadeOutRotateX",
+	"fadeOutRotateY": "fadeOutRotateY",
+	"fadeOutScale": "fadeOutScale",
+	"fadeOutScaleX": "fadeOutScaleX",
+	"fadeOutScaleY": "fadeOutScaleY",
+	) !default;
+
+// Animaciones "Pulse"
+$pulseAnimation: (
+	"fadePulse": "fadePulse",
+	"scalePulse": "scalePulse",
+	"scalePulseY": "scalePulseY",
+	"scalePulseX": "scalePulseX",
+	"rotatePulse": "rotatePulse",
+	"rotatePulseX": "rotatePulseX",
+	"rotatePulseY": "rotatePulseY",
+	"rotatePulse90": "rotatePulse90",
+	"rotatePulse180": "rotatePulse180",
+	"rotatePulse360": "rotatePulse360",
+	) !default;
+
+// Animaciones "Shake"
+
+// proximamente...

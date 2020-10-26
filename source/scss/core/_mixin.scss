@@ -1,0 +1,109 @@
+@mixin breakpoinStyle($className: &) {
+	@at-root {
+		@each $name, $size in $breakpoint {
+			@media screen and (min-width: $size) {
+				#{$className}-#{$name} {
+					@content;
+				}
+			}
+		}
+	}
+}
+
+@mixin maxBreakpoinStyle($className: &) {
+	@at-root {
+		@each $name, $size in $breakpoint {
+			@media screen and (max-width: $size) {
+				#{$className}-#{$name} {
+					@content;
+				}
+			}
+		}
+	}
+}
+
+@mixin query($value) {
+	@media screen and (min-width: map-get($breakpoint, $value)) {
+		@content;
+	}
+}
+
+@mixin maxQuery($value) {
+	@media screen and (max-width: map-get($breakpoint, $value)) {
+		@content;
+	}
+}
+
+@mixin animation ($arr: $fadeAnimation) {
+	@each $name, $size in $arr {
+		&-#{$name} {
+			animation: #{$name};
+		}
+	}
+}
+
+@mixin animationPulse ($arr: $pulseAnimation) {
+	@each $name, $size in $arr {
+		&-#{$name} {
+			animation: #{$name};
+			animation-iteration-count: infinite;
+		}
+	}
+}
+
+@mixin color($className) {
+	.#{$className}.is-opposite {
+		background: $text;
+		color: #fff;
+	}
+
+	.#{$className}.is-color {
+		background: $color;
+		color: #fff;
+	}
+
+	.#{$className}.is-color-low {
+		background: lighten($color, 30%);
+		color: $color;
+	}
+
+	.#{$className}.is-green {
+		background: $success;
+		color: #fff;
+	}
+
+	.#{$className}.is-green-low {
+		background: lighten($success, 35%);
+		color: $success;
+	}
+
+	.#{$className}.is-red {
+		background: $error;
+		color: #fff;
+	}
+
+	.#{$className}.is-red-low {
+		background: lighten($error, 40%);
+		color: $error;
+	}
+
+	.#{$className}.is-yellow {
+		background: $warning;
+		color: #fff;
+	}
+
+	.#{$className}.is-yellow-low {
+		background: lighten($warning, 40%);
+		color: $warning;
+	}
+
+	.#{$className}.is-blue {
+		background: $caution;
+		color: #fff;
+	}
+			
+	.#{$className}.is-blue-low {
+		background: lighten($caution, 30%);
+		color: $caution;
+	}
+}

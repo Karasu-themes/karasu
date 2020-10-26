@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6,
+.hl1, .hl2, .hl3, .hl4, .hl5, .hl6 {
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+
+.hl1, h1 {
+	font-weight: 500;
+	font-size: $size-h1;
+}
+
+.hl2, h2 {
+	font-weight: 500;
+	font-size: $size-h2;
+}
+
+.hl3, h3 {
+	font-weight: 400;
+	font-size: $size-h3;
+}
+
+.hl4, h4 {
+	font-weight: 400;
+	font-size: $size-h4;
+}
+
+.hl5, h5 {
+	font-weight: 400;
+	font-size: $size-h5;
+}
+
+.hl6, h6 {
+	font-weight: 400;
+	font-size: $size-h6;
+}
