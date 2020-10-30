@@ -7,10 +7,10 @@ const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 
 // JS plugin
-const babelify = require('babelify'),
-	browserify = require('browserify'),
-	source = require('vinyl-source-stream'),
-	buffer = require('vinyl-buffer');
+const rollup = require('gulp-better-rollup') 
+	sourcemaps = require('gulp-sourcemaps'),
+	uglify = require('gulp-uglify-es').default,
+	babel = require('rollup-plugin-babel');
 
 
 // Basic config
@@ -36,15 +36,20 @@ const css = (pathName) => {
 	.pipe(dest(config.path['css'].dest))	
 }
 
-const js = (pathName, fileName) => {
-	return browserify(pathName)
-	.transform(babelify, {
-      global: true
-    })
-	.bundle()
-	.pipe(source(fileName))
-	.pipe(buffer())
-	.pipe(dest(config.path['js'].dest))	
+const js = (pathName, fileName, moduleName) => {
+  return src(pathName + fileName)
+    .pipe(sourcemaps.init())
+    .pipe(rollup({
+      plugins: [babel()]
+    }, {
+      name: moduleName,
+      format: 'iife',
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(dest(config.path['js'].dest))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(dest(config.path['js'].dest))
 }
 
 // Build para css
@@ -54,9 +59,9 @@ const cssHelperBuild = () => css('./source/scss/helper.scss');
 const cssKarasuBuild = () => css('./source/scss/karasu-dev.scss');
 
 // Build para javascript
-const jsBuild = () => js('./source/js/karasu-dev.js', 'karasu-dev.js');
-const jsUtils = () => js('./source/js/utils/utils.js', 'utils.js');
-const jsComponent = () => js('./source/js/components/component.js', 'component.js');
+const jsBuild = () => js('./source/js/', 'karasu-dev.js', 'raven');
+const jsUtils = () => js('./source/js/utils/', 'utils.js', 'raven');
+const jsComponent = () => js('./source/js/components/', 'component.js', 'raven');
 
 
 // Tareas para los estilos css
@@ -68,8 +73,8 @@ exports.cssBuild = series( cssKarasuBuild,  cssLayoutBuild, cssComponentBuild);
 
 
 // Tareas para JS
-
 exports.js = jsBuild;
+exports.jsComponent = jsComponent;
 exports.jsUtils = jsUtils;
 
 // Monitorear todas las tareas en tiempo real

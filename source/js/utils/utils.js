@@ -12,6 +12,4 @@ const utils = {
 	"merge": merge
 };
 
-global.utils = utils;
-
 export { utils }
