@@ -7,5 +7,6 @@
 
 import { utils } from './utils/utils.js';
 import { component } from './components/component.js';
+import { blogger } from './blogger/blogger.js';
 
-export { utils, component }
+export { utils, component, blogger }
