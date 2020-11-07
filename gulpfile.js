@@ -61,6 +61,7 @@ const cssKarasuBuild = () => css('./source/scss/karasu-dev.scss');
 // Build para javascript
 const jsBuild = () => js('./source/js/', 'karasu-dev.js', 'raven');
 const jsUtils = () => js('./source/js/utils/', 'utils.js', 'raven');
+const jsBlogger = () => js('./source/js/blogger/', 'blogger.js', 'raven');
 const jsComponent = () => js('./source/js/components/', 'component.js', 'raven');
 
 
@@ -86,4 +87,5 @@ exports.dev = () => {
 	watch([config.path['js'].watch], series(jsBuild));
 	watch([config.path['js'].watch], series(jsUtils));
 	watch([config.path['js'].watch], series(jsComponent));
+	watch([config.path['js'].watch], series(jsBlogger));
 }
