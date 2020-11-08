@@ -1,22 +1,15 @@
-/*!
-* Utils - karasu-dev @ v0.1.12
-* Copyright 2020 © Karasu themes
-* Developed by Marcelo (github.com/MarceloTLD)
-* MIT License
-*/
-
 import { click, toggle, clickEach } from './module/click';
 import { css } from './module/css';
 import { each } from './module/each';
 import { merge } from './module/merge';
+import { createScript } from './module/createScript';
+import { format } from './module/format';
+import { parser } from './module/parser';
 
-const utils = {
-	"click": click,
-	"clickEach": clickEach,
-	"toggle": toggle,
-	"css": css,
-	"each": each,
-	"merge": merge
-};
+const blogger = {
+	"createScript": createScript,
+	"format": format,
+	"parser": parser,
+}
 
-export { utils }
+export { click, toggle, clickEach, css, each, merge, blogger }
