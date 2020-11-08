@@ -36,15 +36,21 @@ const css = (pathName) => {
 	.pipe(dest(config.path['css'].dest))	
 }
 
-const js = (pathName, fileName, moduleName) => {
+const printLicense = (name) => {
+	return `/*!
+* ${name}karasu-dev @ v0.1.15
+* Copyright 2020 © Karasu themes
+* Developed by Marcelo (github.com/MarceloTLD)
+* MIT License
+*/`
+}
+
+const js = (pathName, fileName, output) => {
   return src(pathName + fileName)
     .pipe(sourcemaps.init())
     .pipe(rollup({
       plugins: [babel()]
-    }, {
-      name: moduleName,
-      format: 'iife',
-    }))
+    }, output))
     .pipe(sourcemaps.write())
     .pipe(dest(config.path['js'].dest))
     .pipe(rename({suffix: '.min'}))
@@ -59,10 +65,9 @@ const cssHelperBuild = () => css('./source/scss/helper.scss');
 const cssKarasuBuild = () => css('./source/scss/karasu-dev.scss');
 
 // Build para javascript
-const jsBuild = () => js('./source/js/', 'karasu-dev.js', 'raven');
-const jsUtils = () => js('./source/js/utils/', 'utils.js', 'raven');
-const jsBlogger = () => js('./source/js/blogger/', 'blogger.js', 'raven');
-const jsComponent = () => js('./source/js/components/', 'component.js', 'raven');
+const jsBuild = () => js('./source/js/', 'karasu-dev.js', {name: 'raven', format: 'iife', banner: printLicense('')});
+const jsUtils = () => js('./source/js/utils/', 'utils.js', {name: 'utils', format: 'iife', banner: printLicense('Utils - ')});
+const jsComponent = () => js('./source/js/components/', 'component.js', {name: 'components', format: 'iife', banner: printLicense('Components - ')});
 
 
 // Tareas para los estilos css
@@ -75,6 +80,7 @@ exports.cssBuild = series( cssKarasuBuild,  cssLayoutBuild, cssComponentBuild);
 
 // Tareas para JS
 exports.js = jsBuild;
+exports.jsBuild = series( jsBuild,  jsComponent, jsUtils);
 exports.jsComponent = jsComponent;
 exports.jsUtils = jsUtils;
 
@@ -87,5 +93,4 @@ exports.dev = () => {
 	watch([config.path['js'].watch], series(jsBuild));
 	watch([config.path['js'].watch], series(jsUtils));
 	watch([config.path['js'].watch], series(jsComponent));
-	watch([config.path['js'].watch], series(jsBlogger));
 }
