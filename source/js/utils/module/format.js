@@ -40,7 +40,7 @@ const format = (data, config) => {
 	return {
 		id: getID(data.id.$t),
 		title: data.title ? data.title.$t : 'No title',
-		thumbnail: data.media$thumbnail ? data.media$thumbnail.url.replace(/s\B\d{2,4}-c/, config.img ? config.img : 's200') : getThumbnail,
+		thumbnail: data.media$thumbnail ? data.media$thumbnail.url.replace(/s\B\d{2,4}-c/, config.img ? config.img : 's200') : getThumbnail(content),
 		label: data.category ? data.category.map(el=>el.term) : '',
 		link: getLink(data.link),
 		content: content,
