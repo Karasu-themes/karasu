@@ -179,78 +179,78 @@ hr.is-dotted {
 .ani {
   animation-duration: .2s; }
   .ani-fadeIn {
-    animation: fadeIn; }
+    animation-name: fadeIn; }
   .ani-fadeInTop {
-    animation: fadeInTop; }
+    animation-name: fadeInTop; }
   .ani-fadeInLeft {
-    animation: fadeInLeft; }
+    animation-name: fadeInLeft; }
   .ani-fadeInBottom {
-    animation: fadeInBottom; }
+    animation-name: fadeInBottom; }
   .ani-fadeInRight {
-    animation: fadeInRight; }
+    animation-name: fadeInRight; }
   .ani-fadeInRotate {
-    animation: fadeInRotate; }
+    animation-name: fadeInRotate; }
   .ani-fadeInRotateX {
-    animation: fadeInRotateX; }
+    animation-name: fadeInRotateX; }
   .ani-fadeInRotateY {
-    animation: fadeInRotateY; }
+    animation-name: fadeInRotateY; }
   .ani-fadeInScale {
-    animation: fadeInScale; }
+    animation-name: fadeInScale; }
   .ani-fadeInScaleX {
-    animation: fadeInScaleX; }
+    animation-name: fadeInScaleX; }
   .ani-fadeInScaleY {
-    animation: fadeInScaleY; }
+    animation-name: fadeInScaleY; }
   .ani-fadeOut {
-    animation: fadeOut; }
+    animation-name: fadeOut; }
   .ani-fadeOutTop {
-    animation: fadeOutTop; }
+    animation-name: fadeOutTop; }
   .ani-fadeOutLeft {
-    animation: fadeOutLeft; }
+    animation-name: fadeOutLeft; }
   .ani-fadeOutBottom {
-    animation: fadeOutBottom; }
+    animation-name: fadeOutBottom; }
   .ani-fadeOutRight {
-    animation: fadeOutRight; }
+    animation-name: fadeOutRight; }
   .ani-fadeOutRotate {
-    animation: fadeOutRotate; }
+    animation-name: fadeOutRotate; }
   .ani-fadeOutRotateX {
-    animation: fadeOutRotateX; }
+    animation-name: fadeOutRotateX; }
   .ani-fadeOutRotateY {
-    animation: fadeOutRotateY; }
+    animation-name: fadeOutRotateY; }
   .ani-fadeOutScale {
-    animation: fadeOutScale; }
+    animation-name: fadeOutScale; }
   .ani-fadeOutScaleX {
-    animation: fadeOutScaleX; }
+    animation-name: fadeOutScaleX; }
   .ani-fadeOutScaleY {
-    animation: fadeOutScaleY; }
+    animation-name: fadeOutScaleY; }
   .ani-fadePulse {
-    animation: fadePulse;
+    animation-name: fadePulse;
     animation-iteration-count: infinite; }
   .ani-scalePulse {
-    animation: scalePulse;
+    animation-name: scalePulse;
     animation-iteration-count: infinite; }
   .ani-scalePulseY {
-    animation: scalePulseY;
+    animation-name: scalePulseY;
     animation-iteration-count: infinite; }
   .ani-scalePulseX {
-    animation: scalePulseX;
+    animation-name: scalePulseX;
     animation-iteration-count: infinite; }
   .ani-rotatePulse {
-    animation: rotatePulse;
+    animation-name: rotatePulse;
     animation-iteration-count: infinite; }
   .ani-rotatePulseX {
-    animation: rotatePulseX;
+    animation-name: rotatePulseX;
     animation-iteration-count: infinite; }
   .ani-rotatePulseY {
-    animation: rotatePulseY;
+    animation-name: rotatePulseY;
     animation-iteration-count: infinite; }
   .ani-rotatePulse90 {
-    animation: rotatePulse90;
+    animation-name: rotatePulse90;
     animation-iteration-count: infinite; }
   .ani-rotatePulse180 {
-    animation: rotatePulse180;
+    animation-name: rotatePulse180;
     animation-iteration-count: infinite; }
   .ani-rotatePulse360 {
-    animation: rotatePulse360;
+    animation-name: rotatePulse360;
     animation-iteration-count: infinite; }
   .ani-lt {
     transform-origin: left top; }

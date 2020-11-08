@@ -37,7 +37,7 @@
 @mixin animation ($arr: $fadeAnimation) {
 	@each $name, $size in $arr {
 		&-#{$name} {
-			animation: #{$name};
+			animation-name: #{$name};
 		}
 	}
 }
@@ -45,7 +45,7 @@
 @mixin animationPulse ($arr: $pulseAnimation) {
 	@each $name, $size in $arr {
 		&-#{$name} {
-			animation: #{$name};
+			animation-name: #{$name};
 			animation-iteration-count: infinite;
 		}
 	}
