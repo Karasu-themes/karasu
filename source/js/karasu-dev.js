@@ -17,6 +17,7 @@ const utils = {
 	"clickEach": clickEach,
 	"each": each,
 	"merge": merge,
+	"css": css,
 	"blogger": {
 		"createScript": createScript,
 		"format": format,
