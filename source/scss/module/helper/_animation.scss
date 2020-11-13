@@ -1,5 +1,4 @@
 .ani {
-
 	animation-duration: .2s;
 
 	// Fade
@@ -7,61 +6,59 @@
 
 	// Pulse
 	@include animationPulse($pulseAnimation);
-
-	&-lt {
-		transform-origin: left top;
-	}
-
-	&-mt {
-		transform-origin: center top;
-	}
-
-	&-rt {
-		transform-origin: right top;
-	}
-
-	&-lb {
-		transform-origin: left bottom;
-	}
-
-	&-mb {
-		transform-origin: center bottom;
-	}
-
-	&-rb {
-		transform-origin: right bottom;
-	}
-
-		
-	&-02s {animation-duration: .2s;}
-	&-05s {animation-duration: .5s;}
-	&-07s {animation-duration: .7s;}
-	&-1s {animation-duration: 1s;}
-	&-12s {animation-duration: 1.2s;}
-	&-15s {animation-duration: 1.5s;}
-	
-	&-slow {animation-duration: 2s;}
-	&-fast {animation-duration: .3s;}
-
-	&-infinite {
-		animation-iteration-count: infinite;
-	}
-
-	&-delay {
-		&-02s {animation-delay: .2s;}
-		&-05s {animation-delay: .5s;}
-		&-07s {animation-delay: .7s;}
-		&-1s {animation-delay: 1s;}
-		&-12s {animation-delay: 1.2s;}
-		&-15s {animation-delay: 1.5s;}
-	}
-
-	&-linear {animation-timing-function: linear;}
-	&-ease {animation-timing-function: ease;}
-	&-ease-in {animation-timing-function: ease-in;}
-	&-ease-out {animation-timing-function: ease-out;}
-	&-ease-in-out {animation-timing-function: ease-in-out;}
-	&-forwards {animation-fill-mode: forwards;}
-	&-backwards {animation-fill-mode: backwards;}
-	&-both {animation-fill-mode: both;}
 }
+
+.ani-lt {
+	transform-origin: left top;
+}
+
+.ani-mt {
+	transform-origin: center top;
+}
+
+.ani-rt {
+	transform-origin: right top;
+}
+
+.ani-lb {
+	transform-origin: left bottom;
+}
+
+.ani-mb {
+	transform-origin: center bottom;
+}
+
+.ani-rb {
+	transform-origin: right bottom;
+}
+
+	
+.ani-02s {animation-duration: .2s;}
+.ani-05s {animation-duration: .5s;}
+.ani-07s {animation-duration: .7s;}
+.ani-1s {animation-duration: 1s;}
+.ani-12s {animation-duration: 1.2s;}
+.ani-15s {animation-duration: 1.5s;}
+
+.ani-slow {animation-duration: 2s;}
+.ani-fast {animation-duration: .3s;}
+
+.ani-infinite {
+	animation-iteration-count: infinite;
+}
+
+.ani-delay-02s {animation-delay: .2s;}
+.ani-delay-05s {animation-delay: .5s;}
+.ani-delay-07s {animation-delay: .7s;}
+.ani-delay-1s {animation-delay: 1s;}
+.ani-delay-12s {animation-delay: 1.2s;}
+.ani-delay-15s {animation-delay: 1.5s;}
+
+.ani-linear {animation-timing-function: linear;}
+.ani-ease {animation-timing-function: ease;}
+.ani-ease-in {animation-timing-function: ease-in;}
+.ani-ease-out {animation-timing-function: ease-out;}
+.ani-ease-in-out {animation-timing-function: ease-in-out;}
+.ani-forwards {animation-fill-mode: forwards;}
+.ani-backwards {animation-fill-mode: backwards;}
+.ani-both {animation-fill-mode: both;}
