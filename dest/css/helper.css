@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* Helper - karasu-dev @ v0.1.0
+* Helper - karasu-dev @ v0.1.19
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
@@ -135,64 +135,93 @@
   .ani-rotatePulse360 {
     animation-name: rotatePulse360;
     animation-iteration-count: infinite; }
-  .ani-lt {
-    transform-origin: left top; }
-  .ani-mt {
-    transform-origin: center top; }
-  .ani-rt {
-    transform-origin: right top; }
-  .ani-lb {
-    transform-origin: left bottom; }
-  .ani-mb {
-    transform-origin: center bottom; }
-  .ani-rb {
-    transform-origin: right bottom; }
-  .ani-02s {
-    animation-duration: .2s; }
-  .ani-05s {
-    animation-duration: .5s; }
-  .ani-07s {
-    animation-duration: .7s; }
-  .ani-1s {
-    animation-duration: 1s; }
-  .ani-12s {
-    animation-duration: 1.2s; }
-  .ani-15s {
-    animation-duration: 1.5s; }
-  .ani-slow {
-    animation-duration: 2s; }
-  .ani-fast {
-    animation-duration: .3s; }
-  .ani-infinite {
-    animation-iteration-count: infinite; }
-  .ani-delay-02s {
-    animation-delay: .2s; }
-  .ani-delay-05s {
-    animation-delay: .5s; }
-  .ani-delay-07s {
-    animation-delay: .7s; }
-  .ani-delay-1s {
-    animation-delay: 1s; }
-  .ani-delay-12s {
-    animation-delay: 1.2s; }
-  .ani-delay-15s {
-    animation-delay: 1.5s; }
-  .ani-linear {
-    animation-timing-function: linear; }
-  .ani-ease {
-    animation-timing-function: ease; }
-  .ani-ease-in {
-    animation-timing-function: ease-in; }
-  .ani-ease-out {
-    animation-timing-function: ease-out; }
-  .ani-ease-in-out {
-    animation-timing-function: ease-in-out; }
-  .ani-forwards {
-    animation-fill-mode: forwards; }
-  .ani-backwards {
-    animation-fill-mode: backwards; }
-  .ani-both {
-    animation-fill-mode: both; }
+
+.ani-lt {
+  transform-origin: left top; }
+
+.ani-mt {
+  transform-origin: center top; }
+
+.ani-rt {
+  transform-origin: right top; }
+
+.ani-lb {
+  transform-origin: left bottom; }
+
+.ani-mb {
+  transform-origin: center bottom; }
+
+.ani-rb {
+  transform-origin: right bottom; }
+
+.ani-02s {
+  animation-duration: .2s; }
+
+.ani-05s {
+  animation-duration: .5s; }
+
+.ani-07s {
+  animation-duration: .7s; }
+
+.ani-1s {
+  animation-duration: 1s; }
+
+.ani-12s {
+  animation-duration: 1.2s; }
+
+.ani-15s {
+  animation-duration: 1.5s; }
+
+.ani-slow {
+  animation-duration: 2s; }
+
+.ani-fast {
+  animation-duration: .3s; }
+
+.ani-infinite {
+  animation-iteration-count: infinite; }
+
+.ani-delay-02s {
+  animation-delay: .2s; }
+
+.ani-delay-05s {
+  animation-delay: .5s; }
+
+.ani-delay-07s {
+  animation-delay: .7s; }
+
+.ani-delay-1s {
+  animation-delay: 1s; }
+
+.ani-delay-12s {
+  animation-delay: 1.2s; }
+
+.ani-delay-15s {
+  animation-delay: 1.5s; }
+
+.ani-linear {
+  animation-timing-function: linear; }
+
+.ani-ease {
+  animation-timing-function: ease; }
+
+.ani-ease-in {
+  animation-timing-function: ease-in; }
+
+.ani-ease-out {
+  animation-timing-function: ease-out; }
+
+.ani-ease-in-out {
+  animation-timing-function: ease-in-out; }
+
+.ani-forwards {
+  animation-fill-mode: forwards; }
+
+.ani-backwards {
+  animation-fill-mode: backwards; }
+
+.ani-both {
+  animation-fill-mode: both; }
 
 @keyframes fadeIn {
   from {
@@ -1468,3 +1497,31 @@
 @media screen and (max-width: 1200px) {
   .max-hide-xlg {
     display: none; } }
+
+.table,
+.table table {
+  width: auto;
+  max-width: 100%;
+  color: inherit; }
+
+.table.is-expanded,
+.table.is-expanded table {
+  width: 100%; }
+
+.table table {
+  border-collapse: collapse; }
+
+.table-headline {
+  position: relative;
+  border-bottom: 5px solid #efefef; }
+
+.table-headline th:hover:before {
+  opacity: 1; }
+
+.table-headline th {
+  text-align: left;
+  font-weight: 500;
+  padding: 16px; }
+
+.table-body td {
+  padding: 16px; }

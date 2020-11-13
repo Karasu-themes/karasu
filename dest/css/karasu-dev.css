@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* karasu-dev @ v0.1.15
+* karasu-dev @ v0.1.19
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
@@ -40,7 +40,7 @@ input, textarea, select, option, button {
 
 mark {
   padding: 4px;
-  background: #f7f7f7;
+  background: #efefef;
   color: #313131;
   font-size: 14px;
   border-radius: 4px; }
@@ -49,7 +49,7 @@ strong, b {
   font-weight: 500; }
 
 blockquote {
-  background: #fafafa;
+  background: #f2f2f2;
   border-radius: 4px;
   color: #313131;
   margin: 0;
@@ -89,9 +89,19 @@ h1, h2, h3, h4, h5, h6,
 
 .lead {
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
   opacity: 0.8; }
+
+.drop-caps {
+  overflow: hidden; }
+
+.drop-caps:first-letter {
+  font-family: Georgia;
+  font-size: 64px;
+  float: left;
+  line-height: 60px;
+  padding-right: 8px; }
 
 .list {
   margin-left: 16px; }
@@ -103,7 +113,7 @@ h1, h2, h3, h4, h5, h6,
   padding-bottom: 8px; }
 
 hr {
-  border-color: #f7f7f7;
+  border-color: #efefef;
   border-width: 3px;
   border-style: solid; }
 
@@ -117,7 +127,7 @@ hr.is-dotted {
   border-style: dotted; }
 
 /*!
-* Helper - karasu-dev @ v0.1.15
+* Helper - karasu-dev @ v0.1.19
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
@@ -252,64 +262,93 @@ hr.is-dotted {
   .ani-rotatePulse360 {
     animation-name: rotatePulse360;
     animation-iteration-count: infinite; }
-  .ani-lt {
-    transform-origin: left top; }
-  .ani-mt {
-    transform-origin: center top; }
-  .ani-rt {
-    transform-origin: right top; }
-  .ani-lb {
-    transform-origin: left bottom; }
-  .ani-mb {
-    transform-origin: center bottom; }
-  .ani-rb {
-    transform-origin: right bottom; }
-  .ani-02s {
-    animation-duration: .2s; }
-  .ani-05s {
-    animation-duration: .5s; }
-  .ani-07s {
-    animation-duration: .7s; }
-  .ani-1s {
-    animation-duration: 1s; }
-  .ani-12s {
-    animation-duration: 1.2s; }
-  .ani-15s {
-    animation-duration: 1.5s; }
-  .ani-slow {
-    animation-duration: 2s; }
-  .ani-fast {
-    animation-duration: .3s; }
-  .ani-infinite {
-    animation-iteration-count: infinite; }
-  .ani-delay-02s {
-    animation-delay: .2s; }
-  .ani-delay-05s {
-    animation-delay: .5s; }
-  .ani-delay-07s {
-    animation-delay: .7s; }
-  .ani-delay-1s {
-    animation-delay: 1s; }
-  .ani-delay-12s {
-    animation-delay: 1.2s; }
-  .ani-delay-15s {
-    animation-delay: 1.5s; }
-  .ani-linear {
-    animation-timing-function: linear; }
-  .ani-ease {
-    animation-timing-function: ease; }
-  .ani-ease-in {
-    animation-timing-function: ease-in; }
-  .ani-ease-out {
-    animation-timing-function: ease-out; }
-  .ani-ease-in-out {
-    animation-timing-function: ease-in-out; }
-  .ani-forwards {
-    animation-fill-mode: forwards; }
-  .ani-backwards {
-    animation-fill-mode: backwards; }
-  .ani-both {
-    animation-fill-mode: both; }
+
+.ani-lt {
+  transform-origin: left top; }
+
+.ani-mt {
+  transform-origin: center top; }
+
+.ani-rt {
+  transform-origin: right top; }
+
+.ani-lb {
+  transform-origin: left bottom; }
+
+.ani-mb {
+  transform-origin: center bottom; }
+
+.ani-rb {
+  transform-origin: right bottom; }
+
+.ani-02s {
+  animation-duration: .2s; }
+
+.ani-05s {
+  animation-duration: .5s; }
+
+.ani-07s {
+  animation-duration: .7s; }
+
+.ani-1s {
+  animation-duration: 1s; }
+
+.ani-12s {
+  animation-duration: 1.2s; }
+
+.ani-15s {
+  animation-duration: 1.5s; }
+
+.ani-slow {
+  animation-duration: 2s; }
+
+.ani-fast {
+  animation-duration: .3s; }
+
+.ani-infinite {
+  animation-iteration-count: infinite; }
+
+.ani-delay-02s {
+  animation-delay: .2s; }
+
+.ani-delay-05s {
+  animation-delay: .5s; }
+
+.ani-delay-07s {
+  animation-delay: .7s; }
+
+.ani-delay-1s {
+  animation-delay: 1s; }
+
+.ani-delay-12s {
+  animation-delay: 1.2s; }
+
+.ani-delay-15s {
+  animation-delay: 1.5s; }
+
+.ani-linear {
+  animation-timing-function: linear; }
+
+.ani-ease {
+  animation-timing-function: ease; }
+
+.ani-ease-in {
+  animation-timing-function: ease-in; }
+
+.ani-ease-out {
+  animation-timing-function: ease-out; }
+
+.ani-ease-in-out {
+  animation-timing-function: ease-in-out; }
+
+.ani-forwards {
+  animation-fill-mode: forwards; }
+
+.ani-backwards {
+  animation-fill-mode: backwards; }
+
+.ani-both {
+  animation-fill-mode: both; }
 
 @keyframes fadeIn {
   from {
@@ -1586,8 +1625,36 @@ hr.is-dotted {
   .max-hide-xlg {
     display: none; } }
 
+.table,
+.table table {
+  width: auto;
+  max-width: 100%;
+  color: inherit; }
+
+.table.is-expanded,
+.table.is-expanded table {
+  width: 100%; }
+
+.table table {
+  border-collapse: collapse; }
+
+.table-headline {
+  position: relative;
+  border-bottom: 5px solid #efefef; }
+
+.table-headline th:hover:before {
+  opacity: 1; }
+
+.table-headline th {
+  text-align: left;
+  font-weight: 500;
+  padding: 16px; }
+
+.table-body td {
+  padding: 16px; }
+
 /*!
-* Layout - karasu-dev @ v0.1.15
+* Layout - karasu-dev @ v0.1.19
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
@@ -2105,13 +2172,13 @@ hr.is-dotted {
     width: calc(100% - 280px); } }
 
 /*!
-* Component - karasu-dev @ v0.1.15
+* Component - karasu-dev @ v0.1.19
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
 */
 .btn {
-  background: #f7f7f7;
+  background: #efefef;
   color: #313131;
   padding: 12px 16px;
   margin-bottom: 4px;
@@ -2268,7 +2335,7 @@ a.btn {
   transition: background .3s; }
 
 .dropdown-list__item[href]:hover {
-  background: #f7f7f7; }
+  background: #efefef; }
 
 .dropdown-list__item .fas,
 .dropdown-list__item .far,
@@ -2378,7 +2445,7 @@ a.btn {
   color: #fff; }
 
 .snack {
-  background: #f7f7f7;
+  background: #efefef;
   color: rgba(49, 49, 49, 0.8);
   padding: 16px;
   padding-right: 48px;
@@ -2553,7 +2620,7 @@ a.btn {
     font-size: 20px; } }
 
 .alert {
-  background: #f8f8f8;
+  background: #f0f0f0;
   color: #313131;
   padding: 16px;
   border-radius: 4px; }
@@ -2637,7 +2704,7 @@ a.btn {
   pointer-events: none; }
 
 .modal-headline {
-  background: #f7f7f7;
+  background: #efefef;
   padding: 16px;
   overflow: hidden;
   font-weight: 500;
@@ -2686,13 +2753,13 @@ a.btn {
   display: block; }
 
 /*!
-* Form - karasu-dev @ v0.1.15
+* Form - karasu-dev @ v0.1.19
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
 */
 .form-input {
-  background: #f7f7f7;
+  background: #efefef;
   display: inline-flex;
   align-items: center;
   padding: 0 16px;

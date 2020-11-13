@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*!
-* Component - karasu-dev @ v0.1.15
+* Component - karasu-dev @ v0.1.19
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
 */
 .btn {
-  background: #f7f7f7;
+  background: #efefef;
   color: #313131;
   padding: 12px 16px;
   margin-bottom: 4px;
@@ -163,7 +163,7 @@ a.btn {
   transition: background .3s; }
 
 .dropdown-list__item[href]:hover {
-  background: #f7f7f7; }
+  background: #efefef; }
 
 .dropdown-list__item .fas,
 .dropdown-list__item .far,
@@ -273,7 +273,7 @@ a.btn {
   color: #fff; }
 
 .snack {
-  background: #f7f7f7;
+  background: #efefef;
   color: rgba(49, 49, 49, 0.8);
   padding: 16px;
   padding-right: 48px;
@@ -448,7 +448,7 @@ a.btn {
     font-size: 20px; } }
 
 .alert {
-  background: #f8f8f8;
+  background: #f0f0f0;
   color: #313131;
   padding: 16px;
   border-radius: 4px; }
@@ -532,7 +532,7 @@ a.btn {
   pointer-events: none; }
 
 .modal-headline {
-  background: #f7f7f7;
+  background: #efefef;
   padding: 16px;
   overflow: hidden;
   font-weight: 500;
