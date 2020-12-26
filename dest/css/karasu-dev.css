@@ -2132,44 +2132,38 @@ hr.is-dotted {
   .layout.is-3column .layout-main {
     width: calc(100% - 500px); } }
 
-.panel {
+.panel-sidebar,
+.panel-content {
+  transition: all .3s; }
+
+.panel-sidebar {
   position: fixed;
   left: 0;
   top: 0;
+  width: 280px;
+  height: 100vh;
+  overflow: auto; }
+
+.panel-content {
+  width: calc(100% - 280px);
+  margin-left: 280px; }
+
+.panel.is-active .panel-content {
   width: 100%;
-  height: 100%; }
+  margin-left: 0; }
 
-.panel-left,
-.panel-center,
-.panel-content {
-  height: 100%; }
+.panel.is-active .panel-sidebar {
+  transform: translateX(-100%); }
 
-.panel-content {
-  overflow-y: auto; }
-
-.panel-left {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 90%;
-  max-width: 280px;
-  transform: translateX(-100%);
-  transition: transform .3s;
-  z-index: 1001; }
-
-.panel.is-active .panel-left {
-  transform: translateX(0); }
-
-.panel-center {
-  width: 100%; }
-
-@media screen and (min-width: 992px) {
-  .panel-left {
-    position: relative;
-    transform: translateX(0);
-    transition: 0s; }
-  .panel-center {
-    width: calc(100% - 280px); } }
+@media screen and (max-width: 992px) {
+  .panel-content {
+    width: 100%;
+    margin-left: 0; }
+  .panel-sidebar {
+    position: fixed;
+    transform: translateX(-100%); }
+  .panel.is-active .panel-sidebar {
+    transform: translateX(0); } }
 
 /*!
 * Component - karasu-dev @ v0.1.19
