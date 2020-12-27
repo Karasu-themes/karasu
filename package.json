@@ -1,6 +1,6 @@
 {
   "name": "karasu",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "Libreria css y js para el desarrollo de temas blogger y posiblemente wordpress.",
   "main": "index.js",
   "scripts": {
