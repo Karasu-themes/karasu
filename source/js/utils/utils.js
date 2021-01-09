@@ -5,6 +5,7 @@ import { merge } from './module/merge';
 import { createScript } from './module/createScript';
 import { format } from './module/format';
 import { parser } from './module/parser';
+import { ls } from './module/lscrud';
 
 const blogger = {
 	"createScript": createScript,
@@ -12,4 +13,4 @@ const blogger = {
 	"parser": parser,
 }
 
-export { click, toggle, clickEach, css, each, merge, blogger }
+export { click, toggle, clickEach, css, each, merge, blogger, ls }
