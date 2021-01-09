@@ -7,7 +7,7 @@ const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 
 // JS plugin
-const rollup = require('gulp-better-rollup') 
+const rollup = require('gulp-better-rollup')
 	sourcemaps = require('gulp-sourcemaps'),
 	uglify = require('gulp-uglify-es').default,
 	babel = require('rollup-plugin-babel');
@@ -33,12 +33,12 @@ const css = (pathName) => {
 	.pipe(dest(config.path['css'].dest))
 	.pipe(rename({suffix: '.min'}))
 	.pipe(minify({compatibility: 'ie8'}))
-	.pipe(dest(config.path['css'].dest))	
+	.pipe(dest(config.path['css'].dest))
 }
 
 const printLicense = (name) => {
 	return `/*!
-* ${name}karasu-dev @ v0.1.15
+* ${name}karasu-dev @ v0.1.21
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
