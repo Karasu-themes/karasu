@@ -59,10 +59,10 @@ const js = (pathName, fileName, output) => {
 }
 
 // Build para css
-const cssLayoutBuild = () => css('./source/scss/layout.scss');
-const cssComponentBuild = () => css('./source/scss/component.scss');
-const cssHelperBuild = () => css('./source/scss/helper.scss');
-const cssKarasuBuild = () => css('./source/scss/karasu-dev.scss');
+const cssLayoutBuild = () => css('./source/scss/karasu.layout.scss');
+const cssComponentBuild = () => css('./source/scss/karasu.component.scss');
+const cssHelperBuild = () => css('./source/scss/karasu.utils.scss');
+const cssKarasuBuild = () => css('./source/scss/karasu.scss');
 
 // Build para javascript
 const jsBuild = () => js('./source/js/', 'karasu-dev.js', {name: 'raven', format: 'iife', banner: printLicense('')});
