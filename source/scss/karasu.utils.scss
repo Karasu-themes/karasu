@@ -1,13 +1,13 @@
+// Variables
+@import 'core/variable';
+@import 'core/mixin';
+
 /*!
-* Helper - karasu-dev @ v0.1.20
+* Utils - karasu-dev @ #{$version}
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
 */
-
-// Variables
-@import 'core/variable';
-@import 'core/mixin';
 
 @import 'module/helper/align';
 @import 'module/helper/animation';

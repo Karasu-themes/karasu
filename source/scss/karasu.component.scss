@@ -1,13 +1,13 @@
+// Varialbes
+@import 'core/variable';
+@import 'core/mixin';
+
 /*!
-* Component - karasu-dev @ v0.1.20
+* Component - karasu-dev @ #{$version}
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
 */
-
-// Varialbes
-@import 'core/variable';
-@import 'core/mixin';
 
 // Button
 @import 'module/component/button';
