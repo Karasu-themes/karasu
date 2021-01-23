@@ -1,5 +1,7 @@
-// Colors
+// Version actual de Karasu
+$version: 'v0.2.0';
 
+// Color
 $body: #fff !default;
 $color: #6a74ec !default;
 $caution: #6a92ec !default;
@@ -9,6 +11,7 @@ $warning: #b5a15c !default;
 $text: #313131 !default;
 $light: #efefef !default;
 
+// Array de colores
 $colors: (
 	"color": $color,
 	"blue": $caution,
@@ -28,12 +31,12 @@ $size-h4: 18px !default;
 $size-h5: 14px !default;
 $size-h6: 12px !default;
 
-// Tamanos base para textos y botones.
+// Tamaños base para textos y botones.
 $size-base: 16px !default;
 $size-btn: 14px !default;
 $size-sub: 12px !default;
 
-// Fonts family
+// Tipo de fuente
 $fontFamily: "Roboto" !default;
 $fontLogo: "Roboto" !default;
 
@@ -95,7 +98,3 @@ $pulseAnimation: (
 	"rotatePulse180": "rotatePulse180",
 	"rotatePulse360": "rotatePulse360",
 	) !default;
-
-// Animaciones "Shake"
-
-// proximamente...
