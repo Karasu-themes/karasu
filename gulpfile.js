@@ -59,10 +59,11 @@ const js = (pathName, fileName, output) => {
 }
 
 // Build para css
-const cssLayoutBuild = () => css('./source/scss/karasu.layout.scss');
-const cssComponentBuild = () => css('./source/scss/karasu.component.scss');
-const cssHelperBuild = () => css('./source/scss/karasu.utils.scss');
 const cssKarasuBuild = () => css('./source/scss/karasu.scss');
+const cssHelperBuild = () => css('./source/scss/karasu.utils.scss');
+const cssLayoutBuild = () => css('./source/scss/karasu.layout.scss');
+const cssFormBuild = () => css('./source/scss/karasu.form.scss');
+const cssComponentBuild = () => css('./source/scss/karasu.component.scss');
 
 // Build para javascript
 const jsBuild = () => js('./source/js/', 'karasu-dev.js', {name: 'raven', format: 'iife', banner: printLicense('')});
@@ -74,8 +75,9 @@ const jsComponent = () => js('./source/js/components/', 'component.js', {name: '
 exports.karasu = cssKarasuBuild;
 exports.layout = cssLayoutBuild;
 exports.helper = cssKarasuBuild;
+exports.form = cssFormBuild;
 exports.component = cssComponentBuild;
-exports.cssBuild = series( cssKarasuBuild,  cssLayoutBuild, cssComponentBuild);
+exports.cssBuild = series( cssKarasuBuild,  cssLayoutBuild, cssComponentBuild, cssFormBuild);
 
 
 // Tareas para JS
@@ -88,6 +90,7 @@ exports.jsUtils = jsUtils;
 exports.dev = () => {
 	watch([config.path['css'].watch], series(cssLayoutBuild));
 	watch([config.path['css'].watch], series(cssComponentBuild));
+	watch([config.path['css'].watch], series(cssFormBuild));
 	watch([config.path['css'].watch], series(cssHelperBuild));
 	watch([config.path['css'].watch], series(cssKarasuBuild));
 	watch([config.path['js'].watch], series(jsBuild));
