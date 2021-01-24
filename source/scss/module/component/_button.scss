@@ -42,23 +42,10 @@ a.btn {
 // Color
 @include color("btn");
 
-.btn.is-cta .fas,
-.btn.is-cta .fa,
-.btn.is-cta .far,
-.btn.is-cta .fab {
-	margin-right: 8px;
-	font-size: 20px;
-	display: inline-block;
-	vertical-align: middle;
-}
-
 // offset
-
 .btn.is-offset-right {
 	margin-right: 8px;
 }
-
-
 
 .btn.is-offset-left {
 	margin-left: 8px;
