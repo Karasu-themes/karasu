@@ -1,6 +1,5 @@
 // Configuración
-$version: 'v0.2.0'; // Version actual de Karasu
-$enableColorize: true; // Activa los colores adicionales (caution, success, error, warning)
+@import './config';
 
 // Color
 $body: #fff !default;
@@ -38,13 +37,13 @@ $size-btn: 14px !default;
 $size-sub: 12px !default;
 
 // Tipo de fuente
-$fontFamily: "Roboto" !default;
-$fontLogo: "Roboto" !default;
+$fontFamily: "Roboto" !default; // Global
+$fontLogo: "Roboto" !default; // Logo
 
 // Layout
-$layoutWidth: 1200px !default;
-$layoutSidebar: 320px !default;
-$layoutPanel: 280px !default;
+$layoutWidth: 1200px !default; // Contenedor
+$layoutSidebar: 320px !default; // Sidebar
+$layoutPanel: 280px !default; // Panel
 
 
 // Responsive design
