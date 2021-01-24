@@ -2174,7 +2174,8 @@ hr.is-dotted {
 .btn {
   background: #efefef;
   color: #313131;
-  padding: 12px 16px;
+  padding: 0 16px;
+  line-height: 42px;
   margin-bottom: 4px;
   outline: 0;
   border: 0;
@@ -2183,18 +2184,6 @@ hr.is-dotted {
   font-size: 14px;
   display: inline-block;
   transition: all .3s; }
-
-.btn-header {
-  text-align: left;
-  font-size: 12px;
-  color: rgba(49, 49, 49, 0.5);
-  display: inline-block;
-  vertical-align: middle; }
-  .btn-header span {
-    color: #313131;
-    font-size: 16px;
-    display: block;
-    margin-bottom: 4px; }
 
 button.btn,
 a.btn {
@@ -2205,7 +2194,8 @@ a.btn {
 
 .btn.is-small {
   padding: 8px 16px;
-  font-size: 12px; }
+  font-size: 12px;
+  line-height: initial; }
 
 .btn.is-icon .fas,
 .btn.is-icon .fa,
@@ -2224,56 +2214,41 @@ a.btn {
   background: #6a74ec;
   color: #fff; }
 
-.btn.is-color-low {
-  background: #f2f3fd;
-  color: #6a74ec; }
-
 .btn.is-green {
   background: #8fa975;
   color: #fff; }
-
-.btn.is-green-low {
-  background: #e8eee3;
-  color: #8fa975; }
 
 .btn.is-red {
   background: #be6161;
   color: #fff; }
 
-.btn.is-red-low {
-  background: #f9f2f2;
-  color: #be6161; }
-
 .btn.is-yellow {
   background: #b5a15c;
   color: #fff; }
-
-.btn.is-yellow-low {
-  background: #f5f2e8;
-  color: #b5a15c; }
 
 .btn.is-blue {
   background: #6a92ec;
   color: #fff; }
 
+.btn.is-color-low {
+  background: #f2f3fd;
+  color: #6a74ec; }
+
+.btn.is-green-low {
+  background: #e8eee3;
+  color: #8fa975; }
+
+.btn.is-red-low {
+  background: #f9f2f2;
+  color: #be6161; }
+
+.btn.is-yellow-low {
+  background: #f5f2e8;
+  color: #b5a15c; }
+
 .btn.is-blue-low {
   background: #f2f5fd;
   color: #6a92ec; }
-
-.btn.is-color.is-cta .btn-header {
-  color: rgba(255, 255, 255, 0.5); }
-
-.btn.is-color.is-cta .btn-header span {
-  color: #fff; }
-
-.btn.is-cta .fas,
-.btn.is-cta .fa,
-.btn.is-cta .far,
-.btn.is-cta .fab {
-  margin-right: 8px;
-  font-size: 20px;
-  display: inline-block;
-  vertical-align: middle; }
 
 .btn.is-offset-right {
   margin-right: 8px; }
@@ -2287,7 +2262,8 @@ a.btn {
 .btn.is-badge {
   font-weight: 500;
   padding: 4px;
-  font-size: 12px; }
+  font-size: 12px;
+  line-height: initial; }
 
 .btn.is-badge .fas,
 .btn.is-badge .far,
@@ -2511,37 +2487,37 @@ a.btn {
   background: #6a74ec;
   color: #fff; }
 
-.card.is-color-low {
-  background: #f2f3fd;
-  color: #6a74ec; }
-
 .card.is-green {
   background: #8fa975;
   color: #fff; }
-
-.card.is-green-low {
-  background: #e8eee3;
-  color: #8fa975; }
 
 .card.is-red {
   background: #be6161;
   color: #fff; }
 
-.card.is-red-low {
-  background: #f9f2f2;
-  color: #be6161; }
-
 .card.is-yellow {
   background: #b5a15c;
   color: #fff; }
 
-.card.is-yellow-low {
-  background: #f5f2e8;
-  color: #b5a15c; }
-
 .card.is-blue {
   background: #6a92ec;
   color: #fff; }
+
+.card.is-color-low {
+  background: #f2f3fd;
+  color: #6a74ec; }
+
+.card.is-green-low {
+  background: #e8eee3;
+  color: #8fa975; }
+
+.card.is-red-low {
+  background: #f9f2f2;
+  color: #be6161; }
+
+.card.is-yellow-low {
+  background: #f5f2e8;
+  color: #b5a15c; }
 
 .card.is-blue-low {
   background: #f2f5fd;
@@ -2633,37 +2609,37 @@ a.btn {
   background: #6a74ec;
   color: #fff; }
 
-.alert.is-color-low {
-  background: #f2f3fd;
-  color: #6a74ec; }
-
 .alert.is-green {
   background: #8fa975;
   color: #fff; }
-
-.alert.is-green-low {
-  background: #e8eee3;
-  color: #8fa975; }
 
 .alert.is-red {
   background: #be6161;
   color: #fff; }
 
-.alert.is-red-low {
-  background: #f9f2f2;
-  color: #be6161; }
-
 .alert.is-yellow {
   background: #b5a15c;
   color: #fff; }
 
-.alert.is-yellow-low {
-  background: #f5f2e8;
-  color: #b5a15c; }
-
 .alert.is-blue {
   background: #6a92ec;
   color: #fff; }
+
+.alert.is-color-low {
+  background: #f2f3fd;
+  color: #6a74ec; }
+
+.alert.is-green-low {
+  background: #e8eee3;
+  color: #8fa975; }
+
+.alert.is-red-low {
+  background: #f9f2f2;
+  color: #be6161; }
+
+.alert.is-yellow-low {
+  background: #f5f2e8;
+  color: #b5a15c; }
 
 .alert.is-blue-low {
   background: #f2f5fd;
