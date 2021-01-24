@@ -1,7 +1,8 @@
 .btn {
 	background: $light;
 	color: $text;
-	padding: 12px 16px;
+  padding: 0 16px;
+  line-height: 42px;
 	margin-bottom: 4px;
 	outline: 0;
 	border: 0;
@@ -10,21 +11,6 @@
 	font-size: $size-btn;
 	display: inline-block;
 	transition: all .3s;
-}
-
-.btn-header {
-	text-align: left;
-	font-size: $size-sub;
-	color: rgba($text, .5);
-	display: inline-block;
-	vertical-align: middle;
-
-	span {
-		color: $text;
-		font-size: $size-base;
-		display: block;
-		margin-bottom: 4px;
-	}
 }
 
 button.btn,
@@ -36,14 +22,13 @@ a.btn {
 }
 
 // Tamaños
-
 .btn.is-small {
 	padding: 8px 16px;
-	font-size: $size-sub;
+  font-size: $size-sub;
+  line-height: initial;
 }
 
 // Iconos
-
 .btn.is-icon .fas,
 .btn.is-icon .fa,
 .btn.is-icon .far,
@@ -55,20 +40,7 @@ a.btn {
 }
 
 // Color
-
 @include color("btn");
-
-
-// cta
-
-
-.btn.is-color.is-cta .btn-header {
-	color: rgba(#fff, .5);
-}
-
-.btn.is-color.is-cta .btn-header span {
-	color: #fff;
-}
 
 .btn.is-cta .fas,
 .btn.is-cta .fa,
@@ -103,7 +75,8 @@ a.btn {
 .btn.is-badge {
 	font-weight: 500;
 	padding: 4px;
-	font-size: $size-sub;
+  font-size: $size-sub;
+  line-height: initial;
 }
 
 .btn.is-badge .fas,
