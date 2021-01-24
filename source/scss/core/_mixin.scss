@@ -60,50 +60,63 @@
 	.#{$className}.is-color {
 		background: $color;
 		color: #fff;
-	}
+  }
 
-	.#{$className}.is-color-low {
-		background: lighten($color, 30%);
-		color: $color;
-	}
+  // Activamos los colores adicionales
+  @if $enableColorize {
 
-	.#{$className}.is-green {
-		background: $success;
-		color: #fff;
-	}
+    .#{$className}.is-green {
+      background: $success;
+      color: #fff;
+    }
 
-	.#{$className}.is-green-low {
-		background: lighten($success, 35%);
-		color: $success;
-	}
 
-	.#{$className}.is-red {
-		background: $error;
-		color: #fff;
-	}
+    .#{$className}.is-red {
+      background: $error;
+      color: #fff;
+    }
 
-	.#{$className}.is-red-low {
-		background: lighten($error, 40%);
-		color: $error;
-	}
 
-	.#{$className}.is-yellow {
-		background: $warning;
-		color: #fff;
-	}
+    .#{$className}.is-yellow {
+      background: $warning;
+      color: #fff;
+    }
 
-	.#{$className}.is-yellow-low {
-		background: lighten($warning, 40%);
-		color: $warning;
-	}
 
-	.#{$className}.is-blue {
-		background: $caution;
-		color: #fff;
-	}
-			
-	.#{$className}.is-blue-low {
-		background: lighten($caution, 30%);
-		color: $caution;
-	}
+    .#{$className}.is-blue {
+      background: $caution;
+      color: #fff;
+    }
+
+    @if $enableLowColorize {
+      .#{$className}.is-color-low {
+        background: lighten($color, 30%);
+        color: $color;
+      }
+
+      .#{$className}.is-green-low {
+        background: lighten($success, 35%);
+        color: $success;
+      }
+
+      .#{$className}.is-red-low {
+        background: lighten($error, 40%);
+        color: $error;
+      }
+
+      .#{$className}.is-yellow-low {
+        background: lighten($warning, 40%);
+        color: $warning;
+      }
+
+      .#{$className}.is-blue-low {
+        background: lighten($caution, 30%);
+        color: $caution;
+      }
+    }
+
+  }
+
+
+
 }
