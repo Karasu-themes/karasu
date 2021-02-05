@@ -1,6 +1,0 @@
-@charset "UTF-8";/*!
-* Form - karasu-dev @ v0.2.0
-* Copyright 2020 © Karasu themes
-* Developed by Marcelo (github.com/MarceloTLD)
-* MIT License
-*/.form-input{background:#efefef;display:inline-flex;align-items:center;padding:0 16px;border-radius:4px;vertical-align:middle}.form-input input,.form-input textarea{width:100%;background:0 0;outline:0;border:0;padding:16px 0}.form-input input::placeholder,.form-input textarea::placeholder{font-family:Roboto}.form-input>i{margin-right:16px}.form-input.is-textarea>i{transform:translateY(-8px)}
