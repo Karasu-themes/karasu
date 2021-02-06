@@ -1,0 +1,20 @@
+// Core
+@import './core/settings';
+@import './core/mixin';
+@import './core/color';
+@import './core/typography';
+
+// Tipo de licencia
+@include license("karasu - ", $currentVersion);
+
+// Format
+@import 'karasu.format';
+
+// Component
+@import 'karasu.component';
+
+// Layout
+@import 'karasu.layout';
+
+// Utilities
+@import 'karasu.utils';

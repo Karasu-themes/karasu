@@ -1,0 +1,6 @@
+// Core
+@import './core/settings';
+@import './core/mixin';
+
+// Tipo de licencia
+@include license("karasu@utils - ", $currentVersion);

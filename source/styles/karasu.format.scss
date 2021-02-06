@@ -1,0 +1,7 @@
+// Core
+@import './core/settings';
+@import './core/mixin';
+@import './core/typography';
+
+// Tipo de licencia
+@include license("karasu@format - ", $currentVersion);

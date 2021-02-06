@@ -1,0 +1,46 @@
+@for $i from 1 through $layout-grid-columns-widths {
+	.w#{$i*5} {
+		width: 0 + ( $i * 5%);
+	}
+}
+
+@include query(xs) {
+	@for $i from 1 through $layout-grid-columns-widths {
+		.w#{$i*5}-xs {
+			width: 0 + ( $i * 5%);
+		}
+	}
+}
+
+
+@include query(sm) {
+	@for $i from 1 through $layout-grid-columns-widths {
+		.w#{$i*5}-sm {
+			width: 0 + ( $i * 5%);
+		}
+	}
+}
+
+@include query(md) {
+	@for $i from 1 through $layout-grid-columns-widths {
+		.w#{$i*5}-md {
+			width: 0 + ( $i * 5%);
+		}
+	}
+}
+
+@include query(lg) {
+	@for $i from 1 through $layout-grid-columns-widths {
+		.w#{$i*5}-lg {
+			width: 0 + ( $i * 5%);
+		}
+	}
+}
+
+@include query(xlg) {
+	@for $i from 1 through $layout-grid-columns-widths {
+		.w#{$i*5}-xlg {
+			width: 0 + ( $i * 5%);
+		}
+	}
+}
