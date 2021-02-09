@@ -9,5 +9,7 @@
 @import './modules/layout/layout';
 
 // Grid column
-@import './modules/layout/grid-column';
-@import './modules/layout/width-column';
+@import './modules/layout/layout.grid';
+
+// Width column
+@import './modules/layout/layout.width';
