@@ -11,3 +11,20 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.container-main,
+.container-sidebar {
+  width: 100%;
+}
+
+@include query (md) {
+  // Main
+  .container-main {
+    width: calc(100% - #{$layout-sidebar});
+  }
+  
+  // Sidebar
+  .container-sidebar {
+    width: $layout-sidebar;
+  }
+}
