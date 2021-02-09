@@ -1,0 +1,52 @@
+@for $i from 1 through $pm-amount {
+	.m#{$i*4} {
+		margin: $i*4px;
+    
+		&-t {
+			margin-top: $i*4px;
+		}
+		&-r {
+			margin-right: $i*4px;
+		}
+		&-b {
+			margin-bottom: $i*4px;
+		}
+		&-l {
+			margin-left: $i*4px;
+		}
+
+		// vertical
+		&-y {
+			margin-top: $i*4px;
+			margin-bottom: $i*4px;
+		}
+
+		// Horizontal
+		&-x {
+			margin-left: $i*4px;
+			margin-right: $i*4px;
+		}
+
+	}
+}
+
+// Zero value
+.m-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.m0 {margin: 0;}
+.m0-t {margin-top: 0;}
+.m0-r {margin-right: 0;}
+.m0-b {margin-bottom: 0;}
+.m0-l {margin-left: 0;}
+
+.m0-x {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.m0-y {
+	margin-top: 0;
+	margin-bottom: 0;
+}

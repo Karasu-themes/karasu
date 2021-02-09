@@ -1,0 +1,15 @@
+.hide {
+	display: none;
+}
+
+.min-hide {
+	@include breakpoinStyle {
+		display: none;
+	}
+}
+
+.max-hide {
+	@include maxBreakpoinStyle {
+		display: none;
+	}
+}
