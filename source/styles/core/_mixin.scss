@@ -10,9 +10,33 @@
 	}
 }
 
+@mixin breakpoinStyle($className: &) {
+	@at-root {
+		@each $name, $size in $breakpoint {
+			@media screen and (min-width: $size) {
+				#{$className}-#{$name} {
+					@content;
+				}
+			}
+		}
+	}
+}
+
+@mixin maxBreakpoinStyle($className: &) {
+	@at-root {
+		@each $name, $size in $breakpoint {
+			@media screen and (max-width: $size) {
+				#{$className}-#{$name} {
+					@content;
+				}
+			}
+		}
+	}
+}
+
 @mixin license($currentModule, $version) {
 /*!
-* #{$currentModule} #{$version}
+* #{$currentModule} v#{$version}
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License
