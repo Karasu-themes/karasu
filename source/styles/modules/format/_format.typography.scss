@@ -1,0 +1,28 @@
+// Heading
+.h1 {font-size: $txt-h1;}
+.h2 {font-size: $txt-h2;}
+.h3 {font-size: $txt-h3;}
+.h4 {font-size: $txt-h4;}
+.h5 {font-size: $txt-h5;}
+.h6 {font-size: $txt-h6;}
+
+// Lead
+.lead {
+	line-height: 1.5;
+	font-size: 22px;
+	font-weight: 300;
+	opacity: 0.8;
+}
+
+// Drop caps
+.drop-caps {
+	overflow: hidden;
+}
+
+.drop-caps:first-letter {
+	font-family: Georgia;
+	font-size: $txt-h1*2;
+	float: left;
+	line-height: 60px;
+	padding-right: 8px;
+}
