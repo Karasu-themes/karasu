@@ -1,0 +1,82 @@
+.btn {
+  background: $light;
+  color: $text;
+  padding: 0 16px;
+  line-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  vertical-align: middle;
+  transition: all .3s;
+}
+
+// Icon reset (Font Awesome only)
+.btn .btn-icon {
+  text-align: center;
+  margin-right: 12px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+// Only icon
+.btn.is-only-icon {
+  width: 46px;
+  height: 46px;
+  line-height: inherit;
+  padding: 0;
+  justify-content: center;
+}
+
+.btn.is-only-icon .btn-icon {
+  margin-right: 0;
+}
+
+// offset
+.btn.offset-left {margin-left: 8px;}
+.btn.offset-top {margin-top: 8px;}
+.btn.offset-right {margin-right: 8px;}
+.btn.offset-bottom {margin-bottom: 8px;}
+
+// Badge
+.btn.is-badge {
+  padding: 0 8px;
+  height: 24px;
+  font-size: $txt-sub;
+}
+
+// Color
+.btn.is-color {
+  background: var(--color);
+  color: #fff;
+}
+
+.btn.is-red {
+  background: var(--error);
+  color: #fff;
+}
+
+.btn.is-green {
+  background: var(--success);
+  color: #fff;
+}
+
+.btn.is-blue {
+  background: var(--caution);
+  color: #fff;
+}
+
+.btn.is-yellow {
+  background: var(--warning);
+  color: #fff;
+}
+
+.btn.is-opposite {
+  background: var(--text);
+  color: #fff;
+}
+
+// Hover state
+.btn:hover {text-decoration: none;}
+.btn:hover {
+  opacity: 0.7;
+}

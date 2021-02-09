@@ -1,0 +1,62 @@
+$height: 3px;
+
+// Select
+.tab-select {
+  display: flex;
+  margin-bottom: 8px;
+  border-bottom: $height solid var(--light);
+}
+
+// Select item
+.tab-select-item {
+  background: transparent;
+  color: rgba(var(--text-rgb), .8);
+  border: 0;
+  padding: 12px 16px;
+  font-size: $txt-base;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  transition: all .3s;
+}
+
+.tab-select-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -$height;
+  width: 100%;
+  height: $height;
+  background: rgba(var(--text-rgb), .2);
+  opacity: 0;
+  transition: all .3s;
+}
+
+// Hover state
+.tab-select-item:hover {
+  color: var(--text);
+}
+.tab-select-item:hover::before {
+  opacity: 1;
+}
+
+// Active state
+.tab-select-item.is-active {
+  background: rgba(var(--color-rgb), .1);
+  color: var(--color);
+}
+.tab-select-item.is-active::before {
+  background-color: var(--color);
+  opacity: 1;
+}
+
+// Tab item
+.tab-item {
+  padding: 16px;
+  display: none;
+}
+
+// Tab item active
+.tab-item.is-active {
+  display: block;
+}

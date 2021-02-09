@@ -2,6 +2,16 @@
 @import './core/settings';
 @import './core/mixin';
 @import './core/color';
+@import './core/typography';
 
 // Tipo de licencia
 @include license("karasu@component - ", $currentVersion);
+
+// Button
+@import './modules/component/component.button';
+
+// Button
+@import './modules/component/component.alerts';
+
+// Tabs
+@import './modules/component/component.tabs';
