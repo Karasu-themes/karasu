@@ -213,14 +213,22 @@ blockquote {
 * MIT License
 */
 .btn {
-  background: #eceff1;
-  color: #263238;
+  --bg: var(--light);
+  --txt: var(--text);
+  background: var(--bg);
+  color: var(--txt);
+  text-align: inherit;
+  font-size: 14px;
+  font-weight: 500;
   padding: 0 16px;
   line-height: 46px;
+  border: 0;
+  outline: 0;
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
   transition: all .3s; }
 
 .btn .btn-icon {
@@ -257,28 +265,28 @@ blockquote {
   font-size: 12px; }
 
 .btn.is-color {
-  background: var(--color);
-  color: #fff; }
+  --bg: var(--color);
+  --txt: #fff; }
 
 .btn.is-red {
-  background: var(--error);
-  color: #fff; }
+  --bg: var(--error);
+  --txt: #fff; }
 
 .btn.is-green {
-  background: var(--success);
-  color: #fff; }
+  --bg: var(--success);
+  --txt: #fff; }
 
 .btn.is-blue {
   background: var(--caution);
   color: #fff; }
 
 .btn.is-yellow {
-  background: var(--warning);
-  color: #fff; }
+  --bg: var(--warning);
+  --txt: #fff; }
 
 .btn.is-opposite {
-  background: var(--text);
-  color: #fff; }
+  --bg: var(--text);
+  --txt: #fff; }
 
 .btn:hover {
   text-decoration: none; }
@@ -366,6 +374,50 @@ blockquote {
 
 .tab-item.is-active {
   display: block; }
+
+.collapse-trigger {
+  margin-bottom: 8px; }
+
+.collapse-trigger:last-child {
+  margin-bottom: 0; }
+
+.collapse-content {
+  padding: 16px;
+  display: none; }
+
+.collapse-content.is-active {
+  display: block; }
+
+.collapse-trigger {
+  position: relative; }
+
+.collapse-trigger:before {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #000;
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+  top: calc(100% / 2 - 2px);
+  transform: rotate(90deg); }
+
+.collapse-trigger:after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #000;
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+  top: calc(100% / 2 - 2px);
+  transform: rotate(0); }
+
+.collapse-trigger.is-active:before {
+  transform: rotate(45deg); }
+
+.collapse-trigger.is-active:after {
+  transform: rotate(-45deg); }
 
 /*!
 * karasu@layout -  v0.3.0
