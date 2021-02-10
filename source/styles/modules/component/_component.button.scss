@@ -1,12 +1,20 @@
 .btn {
-  background: $light;
-  color: $text;
+  --bg: var(--light);
+  --txt: var(--text);
+  background: var(--bg);
+  color: var(--txt);
+  text-align: inherit;
+  font-size: $txt-btn;
+  font-weight: 500;
   padding: 0 16px;
   line-height: 46px;
+  border: 0;
+  outline: 0;
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
   vertical-align: middle;
+  cursor: pointer;
   transition: all .3s;
 }
 
@@ -46,18 +54,18 @@
 
 // Color
 .btn.is-color {
-  background: var(--color);
-  color: #fff;
+  --bg: var(--color);
+  --txt: #fff;
 }
 
 .btn.is-red {
-  background: var(--error);
-  color: #fff;
+  --bg: var(--error);
+  --txt: #fff;
 }
 
 .btn.is-green {
-  background: var(--success);
-  color: #fff;
+  --bg: var(--success);
+  --txt: #fff;
 }
 
 .btn.is-blue {
@@ -66,13 +74,13 @@
 }
 
 .btn.is-yellow {
-  background: var(--warning);
-  color: #fff;
+  --bg: var(--warning);
+  --txt: #fff;
 }
 
 .btn.is-opposite {
-  background: var(--text);
-  color: #fff;
+  --bg: var(--text);
+  --txt: #fff;
 }
 
 // Hover state
