@@ -64,3 +64,6 @@ exports["css.watch"] = () => {
 exports.js = js.karasu;
 exports["js.utils"] = js.utils;
 exports["js.component"] = js.component;
+exports["js.watch"] = () => {
+  watch('./source/js/**/*.js', series(js.karasu, js.utils, js.component))
+}
