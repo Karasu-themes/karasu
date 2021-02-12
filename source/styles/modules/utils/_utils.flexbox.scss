@@ -49,7 +49,7 @@
 	}
 }
 
-.content-center {
+.content-stretch {
 	justify-content: stretch;
 	@include breakpoinStyle {
 		justify-content: stretch;
@@ -78,7 +78,7 @@
 	}
 }
 
-.item-center {
+.item-stretch {
 	align-items: stretch;
 	@include breakpoinStyle {
 		align-items: stretch;
