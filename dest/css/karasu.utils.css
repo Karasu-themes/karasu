@@ -543,22 +543,22 @@
     .content-center-xlg {
       justify-content: center; } }
 
-.content-center {
+.content-stretch {
   justify-content: stretch; }
   @media screen and (min-width: 480px) {
-    .content-center-xs {
+    .content-stretch-xs {
       justify-content: stretch; } }
   @media screen and (min-width: 576px) {
-    .content-center-sm {
+    .content-stretch-sm {
       justify-content: stretch; } }
   @media screen and (min-width: 768px) {
-    .content-center-md {
+    .content-stretch-md {
       justify-content: stretch; } }
   @media screen and (min-width: 992px) {
-    .content-center-lg {
+    .content-stretch-lg {
       justify-content: stretch; } }
   @media screen and (min-width: 1200px) {
-    .content-center-xlg {
+    .content-stretch-xlg {
       justify-content: stretch; } }
 
 .item-start {
@@ -615,22 +615,22 @@
     .item-center-xlg {
       align-items: center; } }
 
-.item-center {
+.item-stretch {
   align-items: stretch; }
   @media screen and (min-width: 480px) {
-    .item-center-xs {
+    .item-stretch-xs {
       align-items: stretch; } }
   @media screen and (min-width: 576px) {
-    .item-center-sm {
+    .item-stretch-sm {
       align-items: stretch; } }
   @media screen and (min-width: 768px) {
-    .item-center-md {
+    .item-stretch-md {
       align-items: stretch; } }
   @media screen and (min-width: 992px) {
-    .item-center-lg {
+    .item-stretch-lg {
       align-items: stretch; } }
   @media screen and (min-width: 1200px) {
-    .item-center-xlg {
+    .item-stretch-xlg {
       align-items: stretch; } }
 
 .self-start {

@@ -1,5 +1,6 @@
 :root {
   // Color
+  --body: #{$light};
   --color: #{$color};
   --color-rgb: #{getRGB($color)};
   --text: #{$text};

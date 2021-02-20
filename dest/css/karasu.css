@@ -12,6 +12,7 @@
 * MIT License
 */
 :root {
+  --body: #eceff1;
   --color: #6a74ec;
   --color-rgb: 106,116,236;
   --text: #263238;
@@ -45,8 +46,8 @@ html, body {
   padding: 0; }
 
 body {
-  background: #fff;
-  color: #263238;
+  background: var(--body);
+  color: var(--text);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.65; }
@@ -128,8 +129,8 @@ input, textarea, select, option, button {
 
 mark {
   padding: 4px;
-  background: #eceff1;
-  color: #263238;
+  background: var(--light);
+  color: var(--text);
   font-size: 14px;
   border-radius: 4px; }
 
@@ -137,9 +138,9 @@ strong, b {
   font-weight: 500; }
 
 blockquote {
-  background: #eceff1;
+  background: var(--light);
   border-radius: 4px;
-  color: rgba(38, 50, 56, 0.5);
+  color: rgba(var(--text-rgb), 0.5);
   margin: 0;
   margin-bottom: 12px;
   padding: 16px; }
@@ -159,7 +160,7 @@ blockquote {
 
 .table-headline {
   position: relative;
-  border-bottom: 5px solid #eceff1; }
+  border-bottom: 5px solid var(--light); }
 
 .table-headline th:hover:before {
   opacity: 1; }
@@ -1426,22 +1427,22 @@ blockquote {
     .content-center-xlg {
       justify-content: center; } }
 
-.content-center {
+.content-stretch {
   justify-content: stretch; }
   @media screen and (min-width: 480px) {
-    .content-center-xs {
+    .content-stretch-xs {
       justify-content: stretch; } }
   @media screen and (min-width: 576px) {
-    .content-center-sm {
+    .content-stretch-sm {
       justify-content: stretch; } }
   @media screen and (min-width: 768px) {
-    .content-center-md {
+    .content-stretch-md {
       justify-content: stretch; } }
   @media screen and (min-width: 992px) {
-    .content-center-lg {
+    .content-stretch-lg {
       justify-content: stretch; } }
   @media screen and (min-width: 1200px) {
-    .content-center-xlg {
+    .content-stretch-xlg {
       justify-content: stretch; } }
 
 .item-start {
@@ -1498,22 +1499,22 @@ blockquote {
     .item-center-xlg {
       align-items: center; } }
 
-.item-center {
+.item-stretch {
   align-items: stretch; }
   @media screen and (min-width: 480px) {
-    .item-center-xs {
+    .item-stretch-xs {
       align-items: stretch; } }
   @media screen and (min-width: 576px) {
-    .item-center-sm {
+    .item-stretch-sm {
       align-items: stretch; } }
   @media screen and (min-width: 768px) {
-    .item-center-md {
+    .item-stretch-md {
       align-items: stretch; } }
   @media screen and (min-width: 992px) {
-    .item-center-lg {
+    .item-stretch-lg {
       align-items: stretch; } }
   @media screen and (min-width: 1200px) {
-    .item-center-xlg {
+    .item-stretch-xlg {
       align-items: stretch; } }
 
 .self-start {

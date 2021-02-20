@@ -8,8 +8,8 @@ html, body {
 }
 
 body {
-	background: $body;
-	color: $text;
+	background: var(--body);
+	color: var(--text);
 	font-family: $fontFamily, sans-serif;
 	font-size: 16px;
 	line-height: 1.65;
@@ -100,8 +100,8 @@ input, textarea, select, option, button {
 
 mark {
 	padding: 4px;
-	background: $light;
-	color: $text;
+	background: var(--light);
+	color: var(--text);
 	font-size: $txt-btn;
 	border-radius: 4px;
 }
@@ -113,9 +113,9 @@ strong, b {
 // Blockquote
 
 blockquote {
-	background: $light;
+	background: var(--light);
 	border-radius: 4px;
-	color: rgba($text, .5);
+	color: rgba(var(--text-rgb), .5);
 	margin: 0;
   margin-bottom: 12px;
 	padding: 16px;
@@ -140,7 +140,7 @@ blockquote {
 
 .table-headline {
     position: relative;
-    border-bottom: 5px solid $light;
+    border-bottom: 5px solid var(--light);
 }
 
 .table-headline th:hover:before {
