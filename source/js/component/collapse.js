@@ -12,7 +12,7 @@ const _COLLAPSE = (() => {
     let content = self.parentNode.querySelector('.collapse-content'),
       isCollapsible = css.has(self.parentNode, 'is-collapsible');
 
-      console.log(isCollapsible)
+      // console.log(isCollapsible)
 
     click(self, () => {
       if (isCollapsible) {
