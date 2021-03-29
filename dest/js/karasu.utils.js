@@ -1,5 +1,5 @@
 /*!
-* karasu@utils - v0.3.3
+* karasu@utils - v0.3.4
 * Copyright 2020 © Karasu themes
 * Developed by Marcelo (github.com/MarceloTLD)
 * MIT License

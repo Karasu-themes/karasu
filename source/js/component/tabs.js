@@ -3,25 +3,30 @@ import { click } from '../utils/click';
 import { css } from '../utils/css';
 
 const _TAB = (() => {
-  const selector = document.querySelectorAll('.tab-select .tab-select-item'),
-    selectorContent = document.querySelectorAll('.tab .tab-item');
 
-  each(selector, (index, el) => {
-    let self = el;
-    click(self, (e) => {
-      let getHash = self.getAttribute('data-id'),
-        currentItem = document.getElementById(getHash);
-      
-      // Clean all select
-      css.clean(selector, 'is-active');
-      css.clean(selectorContent, 'is-active');
+  const tabs = document.querySelectorAll('.tab');
+  
+  each(tabs, (i, tabItem) => {
+    let tabTrigger = tabItem.querySelectorAll('.tab-select-item'),
+      tabContent = tabItem.querySelectorAll('.tab-item');
 
-      // Active current item
-      css.add(self, 'is-active');
-      css.add(currentItem, 'is-active');
+    each(tabTrigger, (index, item) => {
+      let getHash = item.getAttribute('data-id'),
+        currentItem = tabItem.querySelector('#'+getHash);
+
+      click(item, (e)=> {
+        // Clean all select
+        css.clean(tabTrigger, 'is-active');
+        css.clean(tabContent, 'is-active');
+
+        // Active current item
+        css.add(item, 'is-active');
+        css.add(currentItem, 'is-active');
+      })
 
     })
-  });
+
+  })
 
 })();
 
