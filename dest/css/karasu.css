@@ -486,6 +486,57 @@ blockquote {
 .collapse-trigger.is-active:after {
   transform: rotate(-45deg); }
 
+.dropdown {
+  /*empty*/ }
+
+.dropdown-content {
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transform-origin: right top;
+  transform: scale(0.2);
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  transition: transform .2s, opacity .2s; }
+
+.dropdown-content.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  user-select: auto;
+  transform: scale(1); }
+
+.dropdown-list {
+  padding: 8px;
+  margin: 0;
+  min-width: 200px; }
+
+.dropdown-list li {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  position: relative;
+  display: block;
+  white-space: nowrap; }
+
+.dropdown-list i {
+  text-align: center;
+  margin-right: 12px;
+  font-size: 18px;
+  display: inline-block; }
+
+.dropdown-list li a {
+  padding: 12px 8px;
+  display: block;
+  font-weight: 500;
+  color: var(--text);
+  transition: all .16s; }
+
+.dropdown-list li a:hover {
+  background: rgba(var(--color-rgb), 0.1);
+  color: var(--color);
+  text-decoration: none; }
+
 /*!
 * karasu@layout -  v0.3.4
 * Copyright 2020 © Karasu themes

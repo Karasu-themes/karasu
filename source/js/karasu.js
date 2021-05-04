@@ -1,7 +1,9 @@
 // Karasu.component
 import { tab } from './component/tabs';
 import { collapse } from './component/collapse';
+import { dropdown } from './component/dropdown';
 import { modal } from './component/modal';
+
 // Karasu.utils
 import { click, toggle, clickEach } from './utils/click';
 import { css } from './utils/css';
@@ -15,6 +17,7 @@ import { ls } from './utils/lscrud';
 const component = {
   tab,
   collapse,
+  dropdown,
   modal
 }
 
