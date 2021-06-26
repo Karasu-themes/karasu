@@ -1,3 +1,0 @@
-@function getRGB($color) {
-  @return  #{red($color) + "," + green($color) + "," + blue($color) };
-}
