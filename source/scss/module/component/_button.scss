@@ -1,0 +1,146 @@
+.cv-btn {
+  background: var(--light);
+  color: var(--text);
+  border: 0;
+  outline: 0;
+  padding: 0 16px;
+  line-height: 42px;
+  border-radius: var(--radius-xs);
+  font-weight: 500;
+  font-size: var(--size-btn);
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  transition: opacity .2s;
+}
+
+button.cv-btn,
+.cv-btn[href] {
+  cursor: pointer;
+}
+
+/*=> button: hover */
+.cv-btn[href]:hover {
+  text-decoration: none;
+}
+
+.cv-btn[href]:hover,
+button.cv-btn:hover {
+  opacity: 0.8;
+}
+
+/*=> button: icon */
+.cv-btn .ico {
+  margin-right: 12px;
+}
+
+/*=> button: small */
+.cv-btn.is-sm {
+  padding: 0 8px;
+  line-height: 36px;
+}
+
+.cv-btn.is-sm .ico {
+  transform: scale(.9);
+}
+
+/*=> clean */
+.cv-btn.is-clean {
+  background: transparent;
+  color: var(--text);
+}
+
+/*=> offset */
+.cv-btn.offset-l4 {
+  margin-left: 4px;
+}
+
+.cv-btn.offset-r4 {
+  margin-right: 4px;
+}
+
+.cv-btn.offset-l8 {
+  margin-left: 8px;
+}
+
+.cv-btn.offset-r8 {
+  margin-right: 8px;
+}
+
+.cv-btn.offset-t4 {
+  margin-top: 4px;
+}
+
+.cv-btn.offset-b4 {
+  margin-bottom: 4px;
+}
+
+.cv-btn.offset-t8 {
+  margin-top: 8px;
+}
+
+.cv-btn.offset-b8 {
+  margin-bottom: 8px;
+}
+
+/*=> only icon */
+.cv-btn.ico-only {
+  width: 42px;
+  height: 42px;
+  line-height: normal;
+  padding: 0;
+  justify-content: center;
+}
+
+.cv-btn.ico-only .ico {margin-right: 0;}
+
+/*=> color */
+.cv-btn.is-color {
+  background: var(--color);
+  color: #fff;
+}
+
+.cv-btn.is-clean.is-color {
+  background: transparent;
+  color: var(--color);
+}
+
+.cv-btn.is-black {
+  background: var(--black);
+  color: #fff;
+}
+
+.cv-btn.is-clean.is-black {
+  background: transparent;
+  color: var(--black);
+}
+
+.cv-btn.is-red {
+  background: var(--error);
+  color: #fff;
+}
+
+.cv-btn.is-clean.is-red {
+  background: transparent;
+  color: var(--error);
+}
+
+.cv-btn.is-green {
+  background: var(--success);
+  color: #fff;
+}
+
+.cv-btn.is-clean.is-green {
+  background: transparent;
+  color: var(--success);
+}
+
+.cv-btn.is-blue {
+  background: var(--caution);
+  color: #fff;
+}
+
+.cv-btn.is-clean.is-blue {
+  background: transparent;
+  color: var(--caution);
+}

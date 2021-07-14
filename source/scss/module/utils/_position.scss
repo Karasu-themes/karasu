@@ -1,0 +1,19 @@
+// position
+.pos-relative,
+.pos {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+// Position align
+@include posAlign("left");
+@include posAlign("top");
+@include posAlign("right");
+@include posAlign("bottom");

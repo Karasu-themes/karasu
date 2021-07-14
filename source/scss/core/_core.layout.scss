@@ -1,0 +1,16 @@
+// layout
+$layout-container: 1200px !default;
+$layout-sidebar: 300px !default;
+$layout-grid-columns: 12 !default;
+$layout-grid-columns-widths: 20 !default;
+
+// Padding/margin multiplo
+$pm-amount: 12 !default;
+
+// Breakpoints
+$breakpoint: (
+	"xs": 480px,
+	"sm": 576px,
+	"md": 768px,
+	"lg": 992px,
+	"xlg": 1200px) !default;

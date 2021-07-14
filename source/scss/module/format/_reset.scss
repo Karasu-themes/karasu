@@ -1,0 +1,132 @@
+*,:before,:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--body);
+	color: var(--text);
+	font-family: $fontBase, sans-serif;
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+// Heading
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  margin-bottom: 24px;
+	line-height: 1.25;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+h4,h5,h6 {margin-bottom: 16px;}
+
+h2,h3,h4,h5,h6 {font-weight: 500;}
+
+h1 {font-size: var(--size-h1);}
+h2 {font-size: var(--size-h2);}
+h3 {font-size: var(--size-h3);}
+h4 {font-size: var(--size-h4);}
+h5 {font-size: var(--size-h5);}
+h6 {font-size: var(--size-h6);}
+
+// Paragraph
+
+p {
+	margin: 0;
+	padding: 0;
+  margin-bottom: 16px;
+}
+
+// List
+
+ul, ol {
+  padding-left: 32px;
+  margin-bottom: 12px;
+}
+
+ul li,
+ol li {
+  list-style: inherit;
+}
+
+ul.unlist,
+ol.unlist {
+  padding-left: 0;
+}
+
+.unlist li {list-style: none;}
+
+// DL List
+
+dl dt {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+dl dd {
+  font-size: var(--size-button);
+  margin-left: 0;
+  padding-left: 8px;
+  opacity: 0.8;
+  border-left: 16px solid var(--light);
+  margin-bottom: 8px;
+}
+
+dl dd:last-child {margin-bottom: 0;}
+
+// Inline code
+
+code {
+  font-family: $fontBase;
+  font-weight: 700;
+  font-size: var(--size-normal);
+  unicode-bidi: bidi-override;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color);
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input, textarea, select, option, button {
+	font-family: $fontBase;
+	font-weight: 500;
+}
+
+mark,
+code {
+	padding: 4px 8px;
+	background: var(--light);
+	color: rgba(var(--text-rgb), .7);
+  font-weight: 700;
+	font-size: var(--size-button);
+	border-radius: var(--radius-md);
+}
+
+strong, b {
+	font-weight: 500;
+}
+
+// Blockquote
+blockquote {
+  border-left: 5px solid var(--light);
+	color: rgba(var(--text-rgb), .7);
+  font-weight: 500;
+	margin: 0;
+  margin-bottom: 12px;
+	padding: 12px 16px;
+}

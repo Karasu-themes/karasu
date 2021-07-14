@@ -1,0 +1,20 @@
+.overflow-initial {
+  overflow: initial;
+  @include query-style {
+    overflow: initial;
+  }
+}
+
+.overflow-visible {
+  overflow: visible;
+  @include query-style {
+    overflow: visible;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  @include query-style {
+    overflow: hidden;
+  }
+}

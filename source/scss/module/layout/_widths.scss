@@ -1,0 +1,13 @@
+@for $i from 1 through $layout-grid-columns-widths {
+	.w#{$i*5} {
+		width: 0 + ( $i * 5%);
+	}
+}
+
+@for $i from 1 through $layout-grid-columns-widths {
+	.w#{$i*5} {
+		@include query-style {
+      width: 0 + ( $i * 5%);
+    }
+	}
+}

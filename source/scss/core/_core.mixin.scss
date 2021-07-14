@@ -1,0 +1,111 @@
+@mixin license($currentModule, $version) {
+  /*!
+  * #{$currentModule} v#{$version}
+  * Copyright 2020 © Karasu themes
+  * Developed by Marcelo (github.com/MarceloTLD)
+  * MIT License (//github.com/Karasu-themes/karasu/blob/master/LICENSE)
+  */
+}
+
+@mixin pm-print($key, $prop, $amount) {
+  @for $i from 1 through $amount {
+    .#{$key}#{$i*4} {
+      #{$prop}: $i*4px;
+      
+      &-t {
+        #{$prop}-top: $i*4px;
+      }
+
+      &-r {
+        #{$prop}-right: $i*4px;
+      }
+
+      &-b {
+        #{$prop}-bottom: $i*4px;
+      }
+
+
+      &-l {
+        #{$prop}-left: $i*4px;
+      }
+
+      // vertical
+      &-y {
+        #{$prop}-top: $i*4px;
+        #{$prop}-bottom: $i*4px;
+      }
+  
+      // Horizontal
+      &-x {
+        #{$prop}-left: $i*4px;
+        #{$prop}-right: $i*4px;
+      }
+  
+    }
+  }
+
+  .#{$key}0 {
+    #{$prop}: 0;
+    &-t {#{$prop}-top: 0;}
+    &-r {#{$prop}-right: 0;}
+    &-b {#{$prop}-bottom: 0;}
+    &-l {#{$prop}-left: 0;}
+    &-x {#{$prop}-left: 0;#{$prop}-right: 0;}
+    &-y {#{$prop}-top: 0;#{$prop}-bottom: 0;}
+  }
+
+  @if ($prop == "margin") {
+    .mt-auto {margin-top: auto;}
+    .mr-auto {margin-right: auto;}
+    .mb-auto {margin-bottom: auto;}
+    .ml-auto {margin-left: auto;}
+    .mx-auto {margin-left: auto;margin-right: auto;}
+    .my-auto {margin-top: auto;margin-bottom: auto;}
+  }
+
+}
+
+@mixin posAlign($key) {
+  .#{$key}-0,
+  .#{str-slice($key, 0, 1)}-0 {
+    #{$key}: 0;
+    @include query-style {
+      #{$key}: 0;
+    }
+  }
+  
+  .#{$key}-25,
+  .#{str-slice($key, 0, 1)}-25 {
+    #{$key}: 25%;
+    @include query-style {
+      #{$key}: 25%;
+    }
+  }
+  
+  .#{$key}-50,
+  .#{str-slice($key, 0, 1)}-50 {
+    #{$key}: 50%;
+    @include query-style {
+      #{$key}: 50%;
+    }
+  }
+  
+  .#{$key}-75,
+  .#{str-slice($key, 0, 1)}-75 {
+    #{$key}: 75%;
+    @include query-style {
+      #{$key}: 75%;
+    }
+  }
+  
+  .#{$key}-100,
+  .#{str-slice($key, 0, 1)}-100 {
+    #{$key}: 100%;
+    @include query-style {
+      #{$key}: 100%;
+    }
+  }
+}
+
+// query
+@import './mixin/query';

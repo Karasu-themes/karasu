@@ -1,0 +1,41 @@
+// none
+.none {
+  display: none;
+  @include query-style {display: none;}
+}
+
+// inline
+.inline {
+  display: inline;
+  @include query-style {display: inline;}
+}
+
+// block
+.block {
+  display: block;
+  @include query-style {display: block;}
+  &-inline {
+    display: inline-block;
+    @include query-style {display: inline-block;}
+  }
+}
+
+// flex
+.flex {
+  display: flex;
+  @include query-style {display: flex;}
+  &-inline {
+    display: inline-flex;
+    @include query-style {display: inline-flex;}
+  }
+}
+
+// grid
+.grid {
+  display: grid;
+  @include query-style {display: flex;}
+  &-inline {
+    display: inline-grid;
+    @include query-style {display: inline-grid;}
+  }
+}

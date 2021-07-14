@@ -1,0 +1,62 @@
+@import '../core/core.layout';
+@import '../core/core.color';
+@import '../core/core.typography';
+@import '../core/core.ui';
+
+@function getRGB($color) {
+  @return  #{red($color) + "," + green($color) + "," + blue($color) };
+}
+
+:root {
+  --body: #{$white};
+  --text: #{$text};
+  --black: #{$black};
+  --white: #{$white};
+  --white-rgb: #{getRGB($white)};
+  --text-rgb: #{getRGB($text)};
+  --light: #{$light};
+  --light-rgb: #{getRGB($light)};
+  --gray-100: #{$gray100};
+  --gray-300: #{$gray300};
+  --gray-500: #{$gray500};
+  --gray-700: #{$gray700};
+  --caution: #{$caution};
+  --success: #{$success};
+  --warning: #{$warning};
+  --error: #{$error};
+  --caution-rgb: #{getRGB($caution)};
+  --success-rgb: #{getRGB($success)};
+  --warning-rgb: #{getRGB($warning)};
+  --error-rgb: #{getRGB($error)};
+  --color: #{$color};
+  --color-light: #{$colorLight};
+  --color-dark: #{$colorDark};
+  --color-rgb: #{getRGB($color)};
+  --color-light-rgb: #{getRGB($colorLight)};
+  --color-dark-rgb: #{getRGB($colorDark)};
+  // typography
+  --size-h1: #{$size-h1};
+  --size-h2: #{$size-h2};
+  --size-h3: #{$size-h3};
+  --size-h4: #{$size-h4};
+  --size-h5: #{$size-h5};
+  --size-h6: #{$size-h6};
+  --size-normal: #{$size-normal};
+  --size-base: #{$size-normal};
+  --size-button: #{$size-button};
+  --size-btn: #{$size-button};
+  --size-sub: #{$size-sub};
+  // layout
+  --layout-container: #{$layout-container};
+  --layout-sidebar: #{$layout-sidebar};
+  // ui
+  --radius-none: #{$ui-radius-none};
+  --radius-xs: #{$ui-radius-xs};
+  --radius-md: #{$ui-radius-md};
+  --radius-lg: #{$ui-radius-lg};
+  --radius-rounded: #{$ui-radius-rounded};
+  --shadow-none: #{$ui-shadow-none};
+  --shadow-xs: #{$ui-shadow-xs};
+  --shadow-md: #{$ui-shadow-md};
+  --shadow-lg: #{$ui-shadow-lg};
+}

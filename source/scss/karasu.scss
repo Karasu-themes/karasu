@@ -1,0 +1,21 @@
+@import './core/core.settings';
+@import './core/core.layout';
+@import './core/core.mixin';
+
+// Tipo de licencia
+@include license("karasu - ", $currentVersion);
+
+/*=> Variables CSS */
+@import './module/root';
+
+/*=> Reset */
+@import './module/format/reset';
+
+// karasu.component
+@import './karasu.component.scss';
+
+// karasu.layout
+@import './karasu.layout.scss';
+
+// karasu.utils
+@import './karasu.utils.scss';

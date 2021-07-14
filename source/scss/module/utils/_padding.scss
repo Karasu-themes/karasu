@@ -1,0 +1,3 @@
+@import '../../core/core.mixin';
+
+@include pm-print("p", "padding", $pm-amount);

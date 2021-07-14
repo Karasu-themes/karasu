@@ -1,0 +1,74 @@
+.cv-collapsible-item {
+  transition: all .3s;
+}
+
+.cv-collapsible-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--text);
+  border-bottom: 1px solid var(--light);
+  transition: all .3s;
+}
+
+.cv-collapsible-item:last-child .cv-collapsible-header {
+  border-bottom-color: transparent;
+}
+
+.cv-collapsible-item .cv-collapsible-header.is-active {
+  border-bottom-color: var(--light);
+}
+
+.cv-collapsible-title {
+  font-size: var(--size-base);
+  font-weight: 500;
+  user-select: none;
+  @include query-min (lg) {
+    font-size: var(--size-h4);
+  }
+}
+
+.cv-collapsible-subhead {
+  font-size: var(--size-btn);
+  opacity: 0.5;
+  user-select: none;
+}
+
+.cv-collapsible-header:hover {
+  background: var(--light);
+}
+
+.cv-collapsible-toggle {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.cv-collapsible-toggle .ico {
+  display: flex;
+  opacity: 0.5;
+  transition: all .3s;
+}
+
+.cv-collapsible-toggle:hover {
+  background: rgba(#000, .1);
+}
+
+.cv-collapsible-header.is-active .cv-collapsible-toggle .ico {
+  transform: rotateX(180deg);
+}
+
+.cv-collapsible-body {
+  padding: 16px;
+  display: none;
+}
+
+.cv-collapsible-body.is-active {
+  display: block;
+}

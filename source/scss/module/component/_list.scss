@@ -1,0 +1,62 @@
+.cv-list {
+  margin: 0 -8px;
+  padding: 0;
+}
+
+.cv-list li {
+  padding: 0 8px;
+  list-style: none;
+  height: 42px;
+  font-size: var(--size-base);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-xs);
+  color: var(--text);
+}
+
+.cv-list li .ico {
+  margin-right: 16px;
+  opacity: 0.7;
+  color: currentColor;
+}
+
+// link
+.cv-list li a {
+  margin: 0 -8px;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--text);
+  border-radius: var(--radius-xs);
+}
+
+.cv-list li:hover a {
+  background: rgba(var(--color-rgb), .2);
+  color: var(--color);
+  text-decoration: none;
+}
+
+// divide
+.cv-list .cv-list__divide {
+  width: calc(100% - 16px);
+  height: 2px;
+  background: var(--light);
+  margin: 8px 8px;
+  display: flex;
+  pointer-events: none;
+  user-select: none;
+}
+
+// head
+.cv-list .cv-list__head {
+  height: auto;
+  font-size: var(--size-sub);
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 700;
+  pointer-events: none;
+  user-select: none;
+  margin: 8px 0;
+}

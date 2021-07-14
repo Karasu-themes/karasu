@@ -1,0 +1,15 @@
+@import './core/core.settings';
+@import './core/core.layout';
+@import './core/core.mixin';
+
+// Tipo de licencia
+@include license("karasu@layout - ", $currentVersion);
+
+/*=> layout.container */
+@import './module/layout/container';
+
+/*=> layout.columns */
+@import './module/layout/columns';
+
+/*=> layout.widths */
+@import './module/layout/widths';

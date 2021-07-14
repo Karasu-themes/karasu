@@ -1,0 +1,113 @@
+/*=> card: container*/
+.cv-card {
+  background: var(--white);
+  color: var(--text);
+  box-shadow: var(--shadow-xs) rgba(#000, .1);
+  border-radius: var(--radius-md);
+}
+
+/*=> card: headline */
+.cv-card-headline {
+  padding: 8px;
+}
+
+.cv-card-headline a:hover {text-decoration: none;}
+
+/*=> card: title */
+.cv-card-title {
+  font-size: var(--size-h6);
+  font-weight: 500;
+  margin: 0;
+  @include query-min  (sm) {
+    font-size: var(--size-h5);
+  }
+}
+
+/*=> card: subhead */
+.cv-card-subhead {
+  opacity: 0.7;
+  font-size: var(--size-btn);
+  margin: 0;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/*=> card: about */
+.cv-card-about {
+  font-size: var(--size-base);
+  font-weight: 400;
+  padding: 8px;
+  opacity: 0.7;
+  line-height: 1.35;
+}
+
+/*=> card: thumbnail */
+.cv-card-image {
+  padding: 8px;
+  padding-bottom: 0;
+}
+
+.cv-card-image img {
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+/*=> card: action */
+.cv-card-action {
+  padding: 8px;
+  padding-top: 0;
+}
+
+/*=> card.list */
+.cv-card-list .cv-card-image {
+  padding: 0;
+  width: 100px;
+  height: 90px;
+}
+
+.cv-card-list .cv-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*=> card.list: content */
+.cv-card-list .cv-card-body {
+  width: calc(100% - 100px);
+}
+
+/*=> card.list: about */
+.cv-card-list .cv-card-about {
+  padding-top: 0;
+}
+
+/*=> card.list: action */
+.cv-card-list .cv-card-action {
+  padding-top: 8px;
+}
+
+/*=> card.overlay */
+.cv-card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-card-overlay .cv-card-image {
+  padding: 0;
+}
+
+.cv-card-overlay .cv-card-image img {display: block;}
+
+.cv-card-overlay .cv-card-body {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(#000, .6));
+  z-index: 2;
+}
+
+.cv-card-overlay .cv-card-title,
+.cv-card-overlay .cv-card-subhead {
+  color: #fff;
+}

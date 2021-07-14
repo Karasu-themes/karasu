@@ -1,0 +1,20 @@
+.c-auto {
+  flex-grow: 1;
+  @include query-style {
+    flex-grow: 1;
+  }
+}
+
+@for $i from 1 through $layout-grid-columns {
+	.c#{$i} {
+		width: 100%/12 * $i;
+	}
+}
+
+@for $i from 1 through $layout-grid-columns {
+	.c#{$i} {
+    @include query-style {
+      width: 100%/12 * $i;
+    }
+	}
+}

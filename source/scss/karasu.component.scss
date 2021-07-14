@@ -1,0 +1,30 @@
+@import './core/core.settings';
+@import './core/core.layout';
+@import './core/core.mixin';
+
+// Tipo de licencia
+@include license("karasu@components - ", $currentVersion);
+
+/*=> Component.button */
+@import './module/component/button';
+
+/*=> Component.badge */
+@import './module/component/badge';
+
+/*=> Component.card */
+@import './module/component/card';
+
+/*=> Component.navbar */
+@import './module/component/navbar';
+
+/*=> Component.list */
+@import './module/component/list';
+
+/*=> Component.dropdown */
+@import './module/component/dropdown';
+
+/*=> Component.tabs */
+@import './module/component/tabs';
+
+/*=> Component.collapsible */
+@import './module/component/collapsible';

@@ -1,0 +1,104 @@
+// Obtenemos el valor siguiente al actual de $breakpoint;
+@function get-max-query($value) {
+  $var: false;
+
+  @if ( $value == "xs") {
+    $var: map-get($breakpoint, "sm") - 1px;
+  } @else if ( $value == "sm") {
+    $var: map-get($breakpoint, "md") - 1px;
+  } @else if ( $value == "md") {
+    $var: map-get($breakpoint, "lg") - 1px;
+  } @else if ( $value == "lg") {
+    $var: map-get($breakpoint, "xlg") - 1px;
+  }
+
+  @return $var;
+}
+
+// query-max
+@mixin query-max ( $value ) {
+	@media screen and (max-width: map-get($breakpoint, $value)) {
+		@content;
+	}
+}
+
+// query-min
+@mixin query-min ( $value ) {
+	@media screen and (min-width: map-get($breakpoint, $value)) {
+		@content;
+	}
+}
+
+// query
+@mixin query ( $value ) {
+  
+  $query: false;
+  $get-min: map-get($breakpoint, $value);
+  $get-max: get-max-query($value);
+
+  @if ($value == "xlg") {
+    $query: "(min-width:" + $get-min + ")";
+  } @else {
+    $query: "(min-width:" + $get-min + ") and (max-width:" + $get-max + ")";
+  }
+
+  @media screen and #{$query} {
+    @content;
+  }
+
+}
+
+// query-min-style
+@mixin query-min-style ( $className: & ) {
+	@at-root {
+		@each $name, $size in $breakpoint {
+			@include query-min ($name) {
+        #{$className}-#{$name} {
+					@content;
+				}
+      }
+		}
+	}
+}
+
+// query-min-style
+@mixin query-max-style ( $className: & ) {
+	@at-root {
+		@each $name, $size in $breakpoint {
+			@include query-max ($name) {
+        #{$className}-#{$name} {
+					@content;
+				}
+      }
+		}
+	}
+}
+
+// query-min-style
+@mixin query-style ( $className: &, $min-max: true ) {
+	@at-root {
+		@each $name, $size in $breakpoint {
+
+      @if ($min-max) {
+        @include query-min ($name) {
+          #{$className}-min-#{$name} {
+            @content;
+          }
+        }
+  
+        @include query-max ($name) {
+          #{$className}-max-#{$name} {
+            @content;
+          }
+        }
+      }
+
+
+			@include query ($name) {
+        #{$className}-#{$name} {
+					@content;
+				}
+      }
+		}
+	}
+}

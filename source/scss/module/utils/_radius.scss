@@ -1,0 +1,39 @@
+// none
+.rad-0 {
+  border-radius: var(--radius-none);
+}
+.rad-0 {
+  @include query-style {border-radius: var(--radius-none);}
+}
+
+// small
+.rad-4 {
+  border-radius: var(--radius-xs);
+}
+.rad-4 {
+  @include query-style {border-radius: var(--radius-xs);}
+}
+
+// Medium
+.rad-8 {
+  border-radius: var(--radius-md);
+}
+.rad-8 {
+  @include query-style {border-radius: var(--radius-md);}
+}
+
+// Large
+.rad-16 {
+  border-radius: var(--radius-lg);
+}
+.rad-16 {
+  @include query-style {border-radius: var(--radius-lg);}
+}
+
+// Rounded
+.r-rounded {
+  border-radius: var(--radius-rounded);
+}
+.rad-rounded {
+  @include query-style {border-radius: var(--radius-rounded);}
+}

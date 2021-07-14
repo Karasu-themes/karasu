@@ -1,0 +1,236 @@
+@import '../../core/core.mixin';
+
+// background
+.bg-default {
+  background-color: var(--light);
+}
+
+.bg-text {
+  background-color: var(--text);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-color {
+  background-color: var(--color);
+}
+
+.bg-color-light {
+  background-color: var(--color-light);
+}
+
+.bg-color-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-red {
+  background-color: var(--error);
+}
+
+.bg-green {
+  background-color: var(--success);
+}
+
+.bg-blue {
+  background-color: var(--caution);
+}
+
+.bg-yellow {
+  background-color: var(--warning);
+}
+
+.bg-gray-100 {
+  background-color: var(--gray-100);
+}
+
+.bg-gray-300 {
+  background-color: var(--gray-300);
+}
+
+.bg-gray-500 {
+  background-color: var(--gray-500);
+}
+
+.bg-gray-700 {
+  background-color: var(--gray-700);
+}
+
+// Color responsive
+.bg-default {
+  @include query-style {background-color: var(--light);}
+}
+.bg-text {
+  @include query-style {background-color: var(--text);}
+}
+
+.bg-black {
+  @include query-style {background-color: var(--black);}
+}
+
+.bg-white {
+  @include query-style {background-color: var(--white);}
+}
+
+.bg-color {
+  @include query-style {background-color: var(--color);}
+}
+
+.bg-color-light {
+  @include query-style {background-color: var(--color-light);}
+}
+
+.bg-color-dark {
+  @include query-style {background-color: var(--color-dark);}
+}
+
+.bg-red {
+  @include query-style {background-color: var(--error);}
+}
+
+.bg-green {
+  @include query-style {background-color: var(--success);}
+}
+
+.bg-blue {
+  @include query-style {background-color: var(--caution);}
+}
+
+.bg-yellow {
+  @include query-style {background-color: var(--warning);}
+}
+
+.bg-gray-100 {
+  @include query-style {background-color: var(--gray-100);}
+}
+
+.bg-gray-300 {
+  @include query-style {background-color: var(--gray-300);}
+}
+
+.bg-gray-500 {
+  @include query-style {background-color: var(--gray-500);}
+}
+
+.bg-gray-700 {
+  @include query-style {background-color: var(--gray-700);}
+}
+
+// text
+.color-default {
+  color: var(--text);
+}
+
+.color-black {
+  color: var(--black);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.color-color {
+  color: var(--color);
+}
+
+.color-color-light {
+  color: var(--color-light);
+}
+
+.color-color-dark {
+  color: var(--color-dark);
+}
+
+.color-red {
+  color: var(--error);
+}
+
+.color-green {
+  color: var(--success);
+}
+
+.color-blue {
+  color: var(--caution);
+}
+
+.color-yellow {
+  color: var(--warning);
+}
+
+.color-gray-100 {
+  color: var(--gray-100);
+}
+
+.color-gray-300 {
+  color: var(--gray-300);
+}
+
+.color-gray-500 {
+  color: var(--gray-500);
+}
+
+.color-gray-700 {
+  color: var(--gray-700);
+}
+
+// Text responsive
+.color-default {
+  @include query-style {color: var(--light);}
+}
+
+.color-black {
+  @include query-style {color: var(--black);}
+}
+
+.color-white {
+  @include query-style {color: var(--white);}
+}
+
+.color-color {
+  @include query-style {color: var(--color);}
+}
+
+.color-color-light {
+  @include query-style {color: var(--color-light);}
+}
+
+.color-color-dark {
+  @include query-style {color: var(--color-dark);}
+}
+
+.color-red {
+  @include query-style {color: var(--error);}
+}
+
+.color-green {
+  @include query-style {color: var(--success);}
+}
+
+.color-blue {
+  @include query-style {color: var(--caution);}
+}
+
+.color-yellow {
+  @include query-style {color: var(--warning);}
+}
+
+.color-gray-100 {
+  @include query-style {color: var(--gray-100);}
+}
+
+.color-gray-300 {
+  @include query-style {color: var(--gray-300);}
+}
+
+.color-gray-500 {
+  @include query-style {color: var(--gray-500);}
+}
+
+.color-gray-700 {
+  @include query-style {color: var(--gray-700);}
+}

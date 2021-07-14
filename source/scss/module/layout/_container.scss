@@ -1,0 +1,30 @@
+.container {
+  width: auto;
+  max-width: 100%;
+}
+
+.container.is-box {
+  max-width: $layout-container;
+}
+
+.container.is-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-main,
+.container-sidebar {
+  width: 100%;
+}
+
+@include query-min (xlg) {
+  // Main
+  .container-main {
+    width: calc(100% - #{$layout-sidebar});
+  }
+  
+  // Sidebar
+  .container-sidebar {
+    width: $layout-sidebar;
+  }
+}

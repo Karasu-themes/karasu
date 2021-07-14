@@ -1,0 +1,81 @@
+// text left
+.txt-left {
+  text-align: left;
+  @include query-style {text-align: left;}
+}
+
+// text center
+.txt-center {
+  text-align: center;
+  @include query-style {text-align: center;}
+}
+
+// text right
+.txt-right {
+  text-align: right;
+  @include query-style {text-align: right;}
+}
+
+// text baseline
+.txt-baseline {
+  text-align: baseline;
+  @include query-style {text-align: baseline;}
+}
+
+// text uppercase
+.txt-uppercase {
+  text-transform: uppercase;
+  @include query-style {text-transform: uppercase;}
+}
+
+// text lowercase
+.txt-lowercase {
+  text-transform: lowercase;
+  @include query-style {text-transform: lowercase;}
+}
+
+.txt-h1 {
+  font-size: var(--size-h1);
+  @include query-style {font-size: var(--size-h1);}
+}
+
+.txt-h2 {
+  font-size: var(--size-h2);
+  @include query-style {font-size: var(--size-h2);}
+}
+
+.txt-h3 {
+  font-size: var(--size-h3);
+  @include query-style {font-size: var(--size-h3);}
+}
+
+.txt-h4 {
+  font-size: var(--size-h4);
+  @include query-style {font-size: var(--size-h4);}
+}
+
+.txt-h5 {
+  font-size: var(--size-h5);
+  @include query-style {font-size: var(--size-h5);}
+}
+
+.txt-h6 {
+  font-size: var(--size-h6);
+  @include query-style {font-size: var(--size-h6);}
+}
+
+.txt-base,
+.txt-normal {
+  font-size: var(--size-normal);
+  @include query-style {font-size: var(--size-normal);}
+}
+
+.txt-btn {
+  font-size: var(--size-button);
+  @include query-style {font-size: var(--size-button);}
+}
+
+.txt-sub {
+  font-size: var(--size-sub);
+  @include query-style {font-size: var(--size-sub);}
+}

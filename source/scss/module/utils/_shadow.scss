@@ -1,0 +1,31 @@
+// none
+.shad-none {
+  box-shadow: var(--shadow-none) rgba(#000, .1);
+  @include query-style {
+    box-shadow: var(--shadow-none) rgba(#000, .1);
+  }
+}
+
+// small
+.shad-4 {
+  box-shadow: var(--shadow-xs) rgba(#000, .1);
+  @include query-style {
+    box-shadow: var(--shadow-xs) rgba(#000, .1);
+  }
+}
+
+// Medium
+.shad-12 {
+  box-shadow: var(--shadow-md) rgba(#000, .1);
+  @include query-style {
+    box-shadow: var(--shadow-md) rgba(#000, .1);
+  }
+}
+
+// Large
+.shad-16 {
+  box-shadow: var(--shadow-lg) rgba(#000, .1);
+  @include query-style {
+    box-shadow: var(--shadow-lg) rgba(#000, .1);
+  }
+}
