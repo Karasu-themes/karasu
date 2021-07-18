@@ -1,7 +1,8 @@
 @import '../../core/core.mixin';
 
-// background
-.bg-default {
+/*=> Background color */
+.bg-default,
+.bg-light {
   background-color: var(--light);
 }
 
@@ -21,11 +22,11 @@
   background-color: var(--color);
 }
 
-.bg-color-light {
+.bg-color-100 {
   background-color: var(--color-light);
 }
 
-.bg-color-dark {
+.bg-color-500 {
   background-color: var(--color-dark);
 }
 
@@ -61,10 +62,12 @@
   background-color: var(--gray-700);
 }
 
-// Color responsive
-.bg-default {
+/*=> Background color responsive */
+.bg-default,
+.bg-light {
   @include query-style {background-color: var(--light);}
 }
+
 .bg-text {
   @include query-style {background-color: var(--text);}
 }
@@ -81,11 +84,11 @@
   @include query-style {background-color: var(--color);}
 }
 
-.bg-color-light {
+.bg-color-100 {
   @include query-style {background-color: var(--color-light);}
 }
 
-.bg-color-dark {
+.bg-color-500 {
   @include query-style {background-color: var(--color-dark);}
 }
 
@@ -122,7 +125,8 @@
 }
 
 // text
-.color-default {
+.color-default,
+.color-light {
   color: var(--text);
 }
 
@@ -134,15 +138,18 @@
   color: var(--white);
 }
 
-.color-color {
+.color-main,
+.color {
   color: var(--color);
 }
 
-.color-color-light {
+.color-100,
+.color-main-100 {
   color: var(--color-light);
 }
 
-.color-color-dark {
+.color-500,
+.color-main-500 {
   color: var(--color-dark);
 }
 
@@ -179,7 +186,8 @@
 }
 
 // Text responsive
-.color-default {
+.color-default,
+.color-light {
   @include query-style {color: var(--light);}
 }
 
@@ -191,15 +199,15 @@
   @include query-style {color: var(--white);}
 }
 
-.color-color {
+.color {
   @include query-style {color: var(--color);}
 }
 
-.color-color-light {
+.color-100 {
   @include query-style {color: var(--color-light);}
 }
 
-.color-color-dark {
+.color-500 {
   @include query-style {color: var(--color-dark);}
 }
 
