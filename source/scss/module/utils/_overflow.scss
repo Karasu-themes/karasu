@@ -18,3 +18,73 @@
     overflow: hidden;
   }
 }
+
+.overflow-x-auto {
+  overflow-x: auto;
+  @include query-style {
+    overflow-x: auto;
+  }
+}
+
+.overflow-x-initial {
+  overflow-x: initial;
+  @include query-style {
+    overflow-x: initial;
+  }
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+  @include query-style {
+    overflow-x: visible;
+  }
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+  @include query-style {
+    overflow-x: hidden;
+  }
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+  @include query-style {
+    overflow-x: auto;
+  }
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+  @include query-style {
+    overflow-y: auto;
+  }
+}
+
+.overflow-y-initial {
+  overflow-y: initial;
+  @include query-style {
+    overflow-y: initial;
+  }
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
+  @include query-style {
+    overflow-y: visible;
+  }
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+  @include query-style {
+    overflow-y: hidden;
+  }
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+  @include query-style {
+    overflow-y: auto;
+  }
+}
