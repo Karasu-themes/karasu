@@ -19,6 +19,13 @@
   }
 }
 
+.h-100v {
+  height: 100vh;
+  @include query-style {
+    height: 100vh;
+  }
+}
+
 @for $i from 1 through $pm-amount {
   .h-#{$i*4} {
     height: 0px + $i*4;

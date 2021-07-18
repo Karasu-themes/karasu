@@ -19,6 +19,13 @@
   }
 }
 
+.w-100v {
+  width: 100vw;
+  @include query-style {
+    width: 100vw;
+  }
+}
+
 @for $i from 1 through $pm-amount {
   .w-#{$i*4} {
     width: 0px + $i*4;
