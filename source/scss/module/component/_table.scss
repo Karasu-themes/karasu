@@ -1,0 +1,46 @@
+/*=> table */
+.cv-table {
+  width: 100%;
+}
+
+.cv-table table {
+  border-collapse: collapse;
+  font-weight: 500;
+}
+
+.cv-table table thead {
+  border-bottom: 4px solid var(--light)
+}
+
+.cv-table table tbody tr:not(:last-child) {
+  border-bottom: 2px solid var(--light)
+}
+
+.cv-table th,
+.cv-table td {
+  padding: 16px;
+}
+
+/*=> table: responsve */
+.cv-table.is-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/*=> table: border */
+.cv-table.is-border {
+  border: 1px solid var(--light);
+}
+
+/*=> table: headline */
+.cv-table.is-headline thead {
+  background: var(--light);
+  border-bottom: 0;
+}
+
+/*=> table: headline.color */
+.cv-table.is-headline-color thead {
+  background: var(--color);
+  color: #fff;
+  border-bottom: 0;
+}
