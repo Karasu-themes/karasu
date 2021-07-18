@@ -39,7 +39,6 @@ function _JS(pathName, fileName, destPath, output) {
 // CSS builds
 const css = {}
 css.karasu = () => _CSS('./source/scss/karasu.scss', './dest/css/');
-css.format = () => _CSS('./source/scss/karasu.format.scss', './dest/css/');
 css.component = () => _CSS('./source/scss/karasu.component.scss', './dest/css/');
 css.layout = () => _CSS('./source/scss/karasu.layout.scss', './dest/css/');
 css.utils = () => _CSS('./source/scss/karasu.utils.scss', './dest/css/');
@@ -52,12 +51,11 @@ js.component = () => _JS('./source/js/', 'karasu.component.js', './dest/js/', {n
 
 // Tasks CSS
 exports.css = css.karasu;
-exports["css.format"] = css.format;
 exports["css.component"] = css.component;
 exports["css.layout"] = css.layout;
 exports["css.utils"] = css.utils;
 exports["css.watch"] = () => {
-  watch('./source/scss/**/*.scss', series(css.karasu, css.format, css.component, css.layout, css.utils))
+  watch('./source/scss/**/*.scss', series(css.karasu, css.component, css.layout, css.utils))
 }
 
 // Tasks JS
@@ -70,5 +68,5 @@ exports["js.watch"] = () => {
 
 // Task dev
 exports["dev"]= () => {
-  watch(['./source/js/**/*.js', './source/scss/**/*.scss'], series(js.karasu, js.utils, js.component, css.karasu, css.format, css.component, css.layout, css.utils))
+  watch(['./source/js/**/*.js', './source/scss/**/*.scss'], series(js.karasu, js.utils, js.component, css.karasu, css.component, css.layout, css.utils))
 }
