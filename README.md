@@ -7,4 +7,4 @@ Pequeño framework css
 
 ## documentación
 
-[Leer documentación (wiki)](https://github.com/Karasu-themes/karasu/wiki "ver documentación (wiki)")
+> El proyecto todavía está en desarrollo.
